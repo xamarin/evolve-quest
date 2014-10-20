@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!--For all properties see: http://developer.android.com/guide/topics/resources/menu_home-resource.html-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <!--Update strings and icons-->
+  <item android:id="@+id/action_scan"
+	      android:title="@string/menu_scan"
+	      android:showAsAction="always|withText"/>
+
+</menu>
+
+<!-- Code to implement into Activity:
+
+public override bool OnCreateOptionsMenu(IMenu menu_home)
+{
+	MenuInflater.Inflate(Resource.Menu.main_menu, menu_home);
+	return base.OnCreateOptionsMenu(menu_home);
+}
+
+
+public override bool OnOptionsItemSelected(IMenuItem item)
+{
+	switch (item.ItemId) {
+	case Resource.Id.action_edit:
+		Toast.MakeText (this, "You pressed edit action!", ToastLength.Short).Show ();
+		break;
+	case Resource.Id.action_save:
+		Toast.MakeText (this, "You pressed save action!", ToastLength.Short).Show ();
+		break;
+	}
+	return base.OnOptionsItemSelected(item);
+}
+
+-->

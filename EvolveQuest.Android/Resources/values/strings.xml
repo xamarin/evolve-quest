@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="play">Play</string>
+  <string name="cancel">Cancel</string>
+  <string name="answer">Answer</string>
+  <string name="continue_game">Continue</string>
+	<string name="app_name">Evolve Quest</string>
+  <string name="menu_scan">SCAN</string>
+  <string name="enter_code">Enter Code</string>
+  <string name="menu_about">About</string>
+  <string name="about">About</string>
+  <string name="mission">MISSION</string>
+  <string name="no_beacons">No Beacons nearby.</string>
+  <string name="beacons_near">A Beacon is near you.</string>
+  <string name="awesome">Awesome!</string>
+  <string name="fantastic">Fantastic!</string>
+  <string name="brilliant">Brilliant!</string>
+  <string name="you_found_beacons">You\'ve found all of the Beacons and you\'re one step closer.</string>
+  <string name="you_found_beacons_code">You\'ve found all of the Beacons.</string>
+  <string name="not_so_fast_question">You\'ve found all of the Beacons, now we have just one more question for you, young traveler:</string>
+  <string name="not_so_fast_code">Not so fast! Enter the secret code in order to continue to your next quest.</string>
+  <string name="continue_quest">Are you ready to continue with the next quest, thrill-seeker?</string>
+  <string name="quest">Quest</string>
+  <string name="completed">Completed</string>
+  <string name="almost_there">Almost there...</string>
+  <string name="thats_it">That\'s it!</string>
+  <string name="correct_code">You entered the correct code.</string>
+  <string name="correct_answer">You answered the question correctly, noble one.</string>
+  <string name="code_hint">Super Secret Code</string>
+  <string name="all_found">You found all of the Beacons!</string>
+  <string name="finish_quest">Finish Quest</string>
+  <string name="congratulations">Congratulations!</string>
+  <string name="share_success">Share Your Success</string>
+  <string name="success_tweet">I just completed the #XamarinEvolve Quest and scored an awesome prize!</string>
+  <string name="game_end">Brave explorer, you have completed the Xamarin Evolve Quest. Please return to the start of the game to receive your prize. Thank you for playing!</string>
+</resources>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory android:title="Evolve Quest">
+    <Preference android:title="Copyright 2014 Xamarin" android:summary="v1.0" >
+      <intent android:action="android.intent.action.VIEW" android:data="http://www.xamarin.com" />
+    </Preference>
+    <Preference android:title="Created with" android:summary="C# and Xamarin">
+      <intent android:action="android.intent.action.VIEW" android:data="http://www.xamarin.com" />
+    </Preference>
+    <Preference android:title="Privacy Policy">
+      <intent android:action="android.intent.action.VIEW" android:data="https://xamarin.com/privacy"/>
+    </Preference>
+  </PreferenceCategory>
+   <PreferenceCategory android:title="Technology Use">
+      <Preference
+                android:title="Estimote">
+        <intent android:action="android.intent.action.VIEW" android:data="http://www.estimote.com" />
+      </Preference>
+      <Preference
+                  android:title="ZXing.NET Barcode Scanning">
+        <intent android:action="android.intent.action.VIEW" android:data="https://components.xamarin.com/view/zxing.net.mobile" />
+      </Preference>
+    <Preference
+                  android:title="Xam.PCL Settings">
+        <intent android:action="android.intent.action.VIEW" android:data="https://www.nuget.org/packages/Xam.Plugins.Settings/" />
+      </Preference>
+    <Preference
+                  android:title="Json.NET">
+        <intent android:action="android.intent.action.VIEW" android:data="https://components.xamarin.com/view/json.net" />
+      </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,83 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="EvolveQuest.WinPhone.Pages.GameCompletePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+     xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+   
+     xmlns:ViewModels="clr-namespace:EvolveQuest.Shared.ViewModels"
+    xmlns:converters="clr-namespace:EvolveQuest.WinPhone.Converters"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+  
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:SlideTransition  Mode="SlideLeftFadeIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:SlideTransition Mode="SlideRightFadeIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:SlideTransition Mode="SlideLeftFadeOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:SlideTransition Mode="SlideRightFadeOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+    <phone:PhoneApplicationPage.Resources>
+        <converters:BooleanToVisibilityConverter x:Key="VisibilityConverter" />
+        <converters:PrizeImageConverter x:Key="PrizeImageConverter"/>
+    </phone:PhoneApplicationPage.Resources>
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Click="AppBarAbout_Click" IsEnabled="True" Text="about"/>
+            </shell:ApplicationBar.MenuItems>
+            <shell:ApplicationBarIconButton IconUri="/Assets/appbar.qr.png" IsEnabled="True" Text="scan" x:Name="AppBarScan" Click="AppBarScan_Click"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+    <phone:PhoneApplicationPage.DataContext>
+        <ViewModels:GameCompleteViewModel/>
+    </phone:PhoneApplicationPage.DataContext>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="EVOLVE QUEST" Style="{StaticResource PhoneTextNormalStyle}" FontFamily="Portable User Interface"/>
+         </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Image Source="{Binding SecretBananaFound, Converter={StaticResource PrizeImageConverter}}" Margin="20,0,20,20" />
+            <TextBlock x:Name="Congratulations" Grid.Row="1" Text="Congratulations!" Foreground="#3498DB" HorizontalAlignment="Center" Style="{StaticResource PhoneTextExtraLargeStyle}" Margin="10,0" FontFamily="Segoe WP Semibold" />
+            <TextBlock x:Name="Hint" Grid.Row="2" Text="Brave explorer, you have completed the Xamarin Evolve Quest. Please return to the start of the game to receive your prize. Thank you for playing!" Margin="10,20,10,10" TextWrapping="Wrap" Foreground="#B4BCBC" Style="{StaticResource PhoneTextLargeStyle}" FontFamily="Segoe WP SemiLight" FontSize="25"/>
+          	<Button Grid.Row="3" Width="300"  Margin="0,10" Content="share your success" BorderBrush="White" Background="#77D065" Foreground="White" Click="ButtonShare_Click" />
+      </Grid>
+    </Grid>
+</phone:PhoneApplicationPage>

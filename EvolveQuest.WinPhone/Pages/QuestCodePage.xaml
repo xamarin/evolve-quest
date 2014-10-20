@@ -1,0 +1,76 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="EvolveQuest.WinPhone.Pages.QuestCodePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:SlideTransition  Mode="SlideDownFadeIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:SlideTransition Mode="SlideUpFadeIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:SlideTransition Mode="SlideUpFadeOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:SlideTransition Mode="SlideDownFadeOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="EVOLVE QUEST" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                <TextBlock Text="Quest" Foreground="#3498DB" Style="{StaticResource PhoneTextNormalStyle}" Margin="10,0" FontFamily="Segoe WP Semibold" FontSize="24"/>
+                <TextBlock x:Name="CurrentQuest"  Foreground="#3498DB" Style="{StaticResource PhoneTextNormalStyle}" Margin="0" FontSize="24"/>
+                <TextBlock Text="Almost there..." Foreground="#B4BCBC" Style="{StaticResource PhoneTextNormalStyle}" FontFamily="Segoe WP SemiLight" FontSize="24"/>
+            </StackPanel>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Image Source="/Assets/ic_code.png" Margin="20,0,20,20" />
+            <TextBlock x:Name="Awesome" Grid.Row="1" Text="Fantastic!" Foreground="#3498DB" HorizontalAlignment="Center" Style="{StaticResource PhoneTextExtraLargeStyle}" Margin="10,0" FontFamily="Segoe WP Semibold" />
+            <TextBlock x:Name="Congrats" Grid.Row="2" Text="You've found all of the Beacons." TextWrapping="Wrap" Foreground="#3498DB"  Style="{StaticResource PhoneTextNormalStyle}" FontSize="24"/>
+            <TextBlock x:Name="Hint" Grid.Row="3" Text="Not so fast! Enter the secret code in order to continue to your next quest." Margin="10,20,10,10" TextWrapping="Wrap" Foreground="#B4BCBC" HorizontalAlignment="Stretch" Style="{StaticResource PhoneTextNormalStyle}" FontFamily="Segoe WP SemiLight"  FontSize="20"/>
+            <TextBox x:Name="Code"  Grid.Row="4" BorderBrush="#3498DB"/>
+
+            <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button  x:Name="ButtonCancel"   Width="225" Content="cancel" BorderBrush="White" Background="#2980B9" Margin="0,10,0,20" Foreground="White" Click="ButtonCancel_Click"/>
+                <Button  x:Name="ButtonContinue"   Width="225" Content="enter code" BorderBrush="White" Background="#77D065" Margin="0,10,0,20" Foreground="White" Click="ButtonContinue_Click"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

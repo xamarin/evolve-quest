@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <color name="xam_dark_blue">#2C3E50</color>
+  <color name="xam_purple">#B455B6</color>
+  <color name="xam_blue">#3498DB</color>
+  <color name="xam_green">#77D065</color>
+  <color name="xam_light_gray">#B4BCBC</color>
+  <color name="xam_gray">#738182</color>
+  <color name="xam_medium_blue">#2980B9</color>
+
+  <color name="btn_bg_color">@color/xam_green</color>
+  <color name="btn_bg_shadow_color">#47A035</color>
+  <color name="quest_color">#ffffff</color>
+  <color name="btn_bg_color_blue">@color/xam_medium_blue</color>
+  <color name="btn_bg_shadow_color_blue">@color/xam_dark_blue</color>
+</resources>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>8aaa4114-f076-4fab-89d0-e3500e28ccc0</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>EvolveScavengerHunt.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\Images.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Color.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\FileCache.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\RelayCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ServiceContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Settings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IMessageDialog.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Answer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Beacon.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BaseModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Clue.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Game.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Quest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Prize.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Question.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\GameCompleteViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\QuestViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\WelcomeViewModel.cs" />
+  </ItemGroup>
+</Project>

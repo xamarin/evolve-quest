@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item>
+		<shape>
+			<solid android:color="@color/btn_bg_shadow_color" />
+			<corners android:radius="@dimen/btn_corner_radius" />
+		</shape>
+	</item>
+    <item android:bottom="1dp">
+		<shape>
+			<solid android:color="@color/btn_bg_color" />
+			<corners android:radius="@dimen/btn_corner_radius" />
+		</shape>
+	</item>
+	<item android:bottom="1dp">
+		<shape>
+			<solid android:color="#10ffffff" />
+			<corners android:radius="@dimen/btn_corner_radius" />
+		</shape>
+	</item>
+</layer-list>

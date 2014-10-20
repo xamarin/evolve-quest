@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="6">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="5">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="6" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="102" kind="relationship" relationship="rootViewController" id="107"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2628" y="49"/>
+        </scene>
+        <!--Quests-->
+        <scene sceneID="101">
+            <objects>
+                <viewController id="102" customClass="WelcomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="99"/>
+                        <viewControllerLayoutGuide type="bottom" id="100"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="103">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="top" image="quest_map.png" translatesAutoresizingMaskIntoConstraints="NO" id="322">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1933"/>
+                                <color key="backgroundColor" red="0.1764705926" green="0.55686277149999996" blue="0.83921575550000005" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="Lb9-fD-BWW"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="111">
+                                <rect key="frame" x="95" y="508" width="130" height="40"/>
+                                <color key="backgroundColor" red="0.16078431372549021" green="0.50196078431372548" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="397"/>
+                                    <constraint firstAttribute="height" constant="40" id="398"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonLoadGame_TouchUpInside:" destination="102" eventType="touchUpInside" id="1322"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="112">
+                                <rect key="frame" x="263" y="38" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="172">
+                                <rect key="frame" x="17" y="530" width="18" height="18"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="383"/>
+                                    <constraint firstAttribute="height" constant="18" id="384"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonAbout_TouchUpInside:" destination="102" eventType="touchUpInside" id="176"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="172" firstAttribute="leading" secondItem="103" secondAttribute="leading" constant="17" id="385"/>
+                            <constraint firstAttribute="bottom" secondItem="172" secondAttribute="bottom" constant="20" id="386"/>
+                            <constraint firstAttribute="trailing" secondItem="322" secondAttribute="trailing" id="393"/>
+                            <constraint firstAttribute="bottom" secondItem="322" secondAttribute="bottom" constant="-1365" id="394"/>
+                            <constraint firstAttribute="trailing" secondItem="111" secondAttribute="trailing" constant="95" id="395"/>
+                            <constraint firstAttribute="bottom" secondItem="111" secondAttribute="bottom" constant="20" id="396"/>
+                            <constraint firstItem="322" firstAttribute="top" secondItem="103" secondAttribute="top" id="715"/>
+                            <constraint firstItem="322" firstAttribute="leading" secondItem="103" secondAttribute="leading" id="Mer-RE-zd9"/>
+                            <constraint firstItem="111" firstAttribute="leading" secondItem="103" secondAttribute="leading" constant="95" id="SbE-IS-0jD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quests" id="106"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="ButtonAbout" destination="172" id="name-outlet-172"/>
+                        <outlet property="ButtonLoadGame" destination="111" id="name-outlet-111"/>
+                        <outlet property="MapImage" destination="322" id="name-outlet-322"/>
+                        <outlet property="ProgressBar" destination="112" id="name-outlet-112"/>
+                        <segue destination="1192" kind="push" id="1197"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="104" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2133" y="381"/>
+        </scene>
+        <!--Evolve Quest-->
+        <scene sceneID="122">
+            <objects>
+                <viewController storyboardIdentifier="GameCompleteViewController" title="Evolve Quest" id="123" customClass="GameCompleteViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="120"/>
+                        <viewControllerLayoutGuide type="bottom" id="121"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="124">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="157">
+                                <rect key="frame" x="283" y="88" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Congratulations!" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="eoK-93-Pkf">
+                                <rect key="frame" x="10" y="355" width="300" height="29"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Y6x-QG-bhv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="clip" numberOfLines="5" minimumScaleFactor="0.70000000000000018" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="M0D-5U-2Ty">
+                                <rect key="frame" x="10" y="384" width="300" height="109"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="OPa-YG-e5y"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="VeV-cZ-3Wk"/>
+                                </constraints>
+                                <string key="text">Brave explorer, you have completed the Xamarin Evolve Quest. Please return to the start of the game to receive your prize. Thank you for playing!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oel-Cz-Z5j">
+                                <rect key="frame" x="20" y="508" width="280" height="40"/>
+                                <color key="backgroundColor" red="0.46666666670000001" green="0.81568627449999997" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="Pzr-pl-58X"/>
+                                    <constraint firstAttribute="height" constant="40" id="q1k-HG-ckm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <state key="normal" title="Share Your Success">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonShare_TouchUpInside:" destination="123" eventType="touchUpInside" id="IE7-MA-7IC"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ic_game_completed.png" translatesAutoresizingMaskIntoConstraints="NO" id="154">
+                                <rect key="frame" x="0.0" y="75" width="320" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="273" id="Gq3-ee-ada"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eoK-93-Pkf" firstAttribute="leading" secondItem="124" secondAttribute="leading" constant="10" id="0PJ-u9-Has"/>
+                            <constraint firstItem="M0D-5U-2Ty" firstAttribute="leading" secondItem="124" secondAttribute="leading" constant="10" id="87m-EB-NcG"/>
+                            <constraint firstAttribute="trailing" secondItem="M0D-5U-2Ty" secondAttribute="trailing" constant="10" id="AHr-hW-6VH"/>
+                            <constraint firstAttribute="trailing" secondItem="eoK-93-Pkf" secondAttribute="trailing" constant="10" id="BHq-aN-1ev"/>
+                            <constraint firstAttribute="bottom" secondItem="eoK-93-Pkf" secondAttribute="bottom" constant="184" id="C82-oM-HfW"/>
+                            <constraint firstAttribute="trailing" secondItem="Oel-Cz-Z5j" secondAttribute="trailing" constant="20" id="FX8-sa-pY9"/>
+                            <constraint firstItem="157" firstAttribute="top" secondItem="154" secondAttribute="top" id="R3C-dE-udy"/>
+                            <constraint firstAttribute="bottom" secondItem="M0D-5U-2Ty" secondAttribute="bottom" constant="75" id="RgC-SZ-bcX"/>
+                            <constraint firstAttribute="bottom" secondItem="Oel-Cz-Z5j" secondAttribute="bottom" constant="20" id="aFu-nd-4Ds"/>
+                            <constraint firstItem="121" firstAttribute="top" secondItem="154" secondAttribute="bottom" constant="243" id="eLd-IB-Ec1"/>
+                            <constraint firstItem="154" firstAttribute="top" secondItem="124" secondAttribute="top" constant="75" id="fB7-G7-tkf"/>
+                            <constraint firstItem="154" firstAttribute="leading" secondItem="124" secondAttribute="leading" id="rC2-Md-xhn"/>
+                            <constraint firstAttribute="trailing" secondItem="154" secondAttribute="trailing" id="vb1-Hg-zek"/>
+                            <constraint firstItem="Oel-Cz-Z5j" firstAttribute="leading" secondItem="124" secondAttribute="leading" constant="20" id="yAr-bC-xiS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ButtonShare" destination="Oel-Cz-Z5j" id="3N0-6Z-EFo"/>
+                        <outlet property="ImageMain" destination="154" id="name-outlet-154"/>
+                        <outlet property="ProgressBar" destination="157" id="name-outlet-157"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="125" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="57"/>
+        </scene>
+        <!--Quest Completed View Controller-->
+        <scene sceneID="192">
+            <objects>
+                <viewController storyboardIdentifier="QuestCompletedViewController" id="193" customClass="QuestCompletedViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="190"/>
+                        <viewControllerLayoutGuide type="bottom" id="191"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="194">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="11 of 12 -" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="221">
+                                <rect key="frame" x="102" y="30" width="80" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="434"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Completed" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="223">
+                                <rect key="frame" x="185" y="30" width="135" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="135" id="437"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.46666666666666667" green="0.81568627450980391" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Quest" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="224">
+                                <rect key="frame" x="0.0" y="30" width="105" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="440"/>
+                                    <constraint firstAttribute="height" constant="21" id="441"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fantastic!" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="225">
+                                <rect key="frame" x="10" y="329" width="290" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="475"/>
+                                    <constraint firstAttribute="height" constant="35" id="476"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="You've found all of the Beacons and are one step closer." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="226">
+                                <rect key="frame" x="20" y="359" width="280" height="62"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="479"/>
+                                    <constraint firstAttribute="height" constant="62" id="480"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Are you ready to continue with the next quest, thrill-seeker?" textAlignment="center" lineBreakMode="clip" numberOfLines="0" minimumScaleFactor="0.70000000000000018" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="227">
+                                <rect key="frame" x="10" y="423" width="300" height="73"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="483"/>
+                                    <constraint firstAttribute="height" constant="73" id="484"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.70588235294117652" green="0.73725490196078436" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="228">
+                                <rect key="frame" x="95" y="508" width="130" height="40"/>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.81568627450980391" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="418"/>
+                                    <constraint firstAttribute="height" constant="40" id="419"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonContinue_TouchUpInside:" destination="193" eventType="touchUpInside" id="293"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ic_quest_completed.png" translatesAutoresizingMaskIntoConstraints="NO" id="347">
+                                <rect key="frame" x="0.0" y="65" width="320" height="243"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="243" id="YJL-WA-HYS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="228" secondAttribute="trailing" constant="95" id="420"/>
+                            <constraint firstAttribute="bottom" secondItem="228" secondAttribute="bottom" constant="20" id="421"/>
+                            <constraint firstItem="221" firstAttribute="leading" secondItem="194" secondAttribute="leading" constant="102" id="432"/>
+                            <constraint firstItem="221" firstAttribute="top" secondItem="194" secondAttribute="top" constant="30" id="433"/>
+                            <constraint firstAttribute="trailing" secondItem="223" secondAttribute="trailing" id="435"/>
+                            <constraint firstItem="223" firstAttribute="top" secondItem="194" secondAttribute="top" constant="30" id="436"/>
+                            <constraint firstItem="224" firstAttribute="leading" secondItem="194" secondAttribute="leading" id="438"/>
+                            <constraint firstItem="224" firstAttribute="top" secondItem="194" secondAttribute="top" constant="30" id="439"/>
+                            <constraint firstAttribute="trailing" secondItem="225" secondAttribute="trailing" constant="20" id="473"/>
+                            <constraint firstAttribute="bottom" secondItem="225" secondAttribute="bottom" constant="204" id="474"/>
+                            <constraint firstAttribute="trailing" secondItem="226" secondAttribute="trailing" constant="20" id="477"/>
+                            <constraint firstAttribute="bottom" secondItem="226" secondAttribute="bottom" constant="147" id="478"/>
+                            <constraint firstAttribute="trailing" secondItem="227" secondAttribute="trailing" constant="10" id="481"/>
+                            <constraint firstAttribute="bottom" secondItem="227" secondAttribute="bottom" constant="72" id="482"/>
+                            <constraint firstItem="227" firstAttribute="leading" secondItem="194" secondAttribute="leading" constant="10" id="5pr-X4-H9Y"/>
+                            <constraint firstAttribute="trailing" secondItem="347" secondAttribute="trailing" id="8CJ-aK-Wms"/>
+                            <constraint firstItem="347" firstAttribute="leading" secondItem="194" secondAttribute="leading" id="AOe-Qb-Tnw"/>
+                            <constraint firstItem="223" firstAttribute="leading" secondItem="194" secondAttribute="leading" constant="185" id="HaM-Qt-qR2"/>
+                            <constraint firstItem="191" firstAttribute="top" secondItem="347" secondAttribute="bottom" constant="260" id="Jop-sr-gq9"/>
+                            <constraint firstItem="347" firstAttribute="top" secondItem="194" secondAttribute="top" constant="65" id="YgW-3F-6SE"/>
+                            <constraint firstItem="225" firstAttribute="leading" secondItem="194" secondAttribute="leading" constant="10" id="jFX-de-c24"/>
+                            <constraint firstItem="228" firstAttribute="leading" secondItem="194" secondAttribute="leading" constant="95" id="quN-CX-K7Q"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="221" secondAttribute="trailing" constant="138" id="rjY-Fc-YYo"/>
+                            <constraint firstItem="226" firstAttribute="leading" secondItem="194" secondAttribute="leading" constant="20" id="uF5-7t-j5O"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="ButtonContinue" destination="228" id="name-outlet-228"/>
+                        <outlet property="LabelQuestNumber" destination="221" id="name-outlet-221"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="195" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1015" y="-764"/>
+        </scene>
+        <!--Quest Code View Controller-->
+        <scene sceneID="199">
+            <objects>
+                <viewController storyboardIdentifier="QuestCodeViewController" id="200" customClass="QuestCodeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="197"/>
+                        <viewControllerLayoutGuide type="bottom" id="198"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="201">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Quest" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="240">
+                                <rect key="frame" x="0.0" y="30" width="105" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="508"/>
+                                    <constraint firstAttribute="height" constant="21" id="509"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="11 of 12 -" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="241">
+                                <rect key="frame" x="102" y="30" width="80" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="512"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Almost there..." lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="242">
+                                <rect key="frame" x="185" y="30" width="135" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="135" id="515"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.70588235294117652" green="0.73725490196078436" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Awesome!" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="243">
+                                <rect key="frame" x="20" y="295" width="280" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="518"/>
+                                    <constraint firstAttribute="height" constant="35" id="519"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="You've found all of the Beacons." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="244">
+                                <rect key="frame" x="20" y="327" width="280" height="62"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="522"/>
+                                    <constraint firstAttribute="height" constant="62" id="523"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Not so fast! Enter the secret code in order to continue to your next quest." textAlignment="center" lineBreakMode="clip" numberOfLines="4" minimumScaleFactor="0.80000000000000027" preferredMaxLayoutWidth="236" translatesAutoresizingMaskIntoConstraints="NO" id="245">
+                                <rect key="frame" x="20" y="387" width="300" height="73"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="526"/>
+                                    <constraint firstAttribute="height" constant="73" id="527"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.70588235294117652" green="0.73725490196078436" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="246">
+                                <rect key="frame" x="170" y="508" width="130" height="40"/>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.81568627450980391" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="530"/>
+                                    <constraint firstAttribute="height" constant="40" id="531"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <state key="normal" title="Enter Code">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonEnterCode_TouchUpInside:" destination="200" eventType="touchUpInside" id="282"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="275">
+                                <rect key="frame" x="20" y="508" width="130" height="40"/>
+                                <color key="backgroundColor" red="0.16078431372549021" green="0.50196078431372548" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="534"/>
+                                    <constraint firstAttribute="height" constant="40" id="535"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonCancel_TouchUpInside:" destination="200" eventType="touchUpInside" id="283"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Super Secret Code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="281">
+                                <rect key="frame" x="20" y="470" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="538"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ic_question.png" translatesAutoresizingMaskIntoConstraints="NO" id="348">
+                                <rect key="frame" x="0.0" y="65" width="320" height="223"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="223" id="Oz4-j6-bqE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="240" firstAttribute="leading" secondItem="201" secondAttribute="leading" id="506"/>
+                            <constraint firstItem="240" firstAttribute="top" secondItem="201" secondAttribute="top" constant="30" id="507"/>
+                            <constraint firstItem="241" firstAttribute="leading" secondItem="201" secondAttribute="leading" constant="102" id="510"/>
+                            <constraint firstItem="241" firstAttribute="top" secondItem="201" secondAttribute="top" constant="30" id="511"/>
+                            <constraint firstAttribute="trailing" secondItem="242" secondAttribute="trailing" id="513"/>
+                            <constraint firstItem="242" firstAttribute="top" secondItem="201" secondAttribute="top" constant="30" id="514"/>
+                            <constraint firstAttribute="trailing" secondItem="243" secondAttribute="trailing" constant="20" id="516"/>
+                            <constraint firstAttribute="bottom" secondItem="243" secondAttribute="bottom" constant="238" id="517"/>
+                            <constraint firstAttribute="trailing" secondItem="244" secondAttribute="trailing" constant="20" id="520"/>
+                            <constraint firstAttribute="bottom" secondItem="244" secondAttribute="bottom" constant="179" id="521"/>
+                            <constraint firstAttribute="trailing" secondItem="245" secondAttribute="trailing" constant="10" id="524"/>
+                            <constraint firstAttribute="bottom" secondItem="245" secondAttribute="bottom" constant="108" id="525"/>
+                            <constraint firstAttribute="trailing" secondItem="246" secondAttribute="trailing" constant="20" id="528"/>
+                            <constraint firstAttribute="bottom" secondItem="246" secondAttribute="bottom" constant="20" id="529"/>
+                            <constraint firstItem="275" firstAttribute="leading" secondItem="201" secondAttribute="leading" constant="20" id="532"/>
+                            <constraint firstAttribute="bottom" secondItem="275" secondAttribute="bottom" constant="20" id="533"/>
+                            <constraint firstAttribute="trailing" secondItem="281" secondAttribute="trailing" constant="20" id="536"/>
+                            <constraint firstAttribute="bottom" secondItem="281" secondAttribute="bottom" constant="68" id="537"/>
+                            <constraint firstItem="198" firstAttribute="top" secondItem="348" secondAttribute="bottom" constant="280" id="9bp-NH-gNy"/>
+                            <constraint firstItem="281" firstAttribute="leading" secondItem="201" secondAttribute="leading" constant="20" id="9lS-e6-vHg"/>
+                            <constraint firstItem="243" firstAttribute="leading" secondItem="201" secondAttribute="leading" constant="20" id="Djm-MZ-sGq"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="241" secondAttribute="trailing" constant="138" id="EL2-vp-ZXG"/>
+                            <constraint firstItem="244" firstAttribute="leading" secondItem="201" secondAttribute="leading" constant="20" id="PvY-oo-esh"/>
+                            <constraint firstItem="242" firstAttribute="leading" secondItem="201" secondAttribute="leading" constant="185" id="bSU-eV-R5X"/>
+                            <constraint firstItem="348" firstAttribute="leading" secondItem="201" secondAttribute="leading" id="inF-tE-bvT"/>
+                            <constraint firstItem="348" firstAttribute="top" secondItem="201" secondAttribute="top" constant="65" id="oYD-x8-IKP"/>
+                            <constraint firstAttribute="trailing" secondItem="348" secondAttribute="trailing" id="uAm-xR-XjH"/>
+                            <constraint firstItem="245" firstAttribute="leading" secondItem="201" secondAttribute="leading" constant="20" id="wPo-Rv-b5u"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="ButtonCancel" destination="275" id="name-outlet-275"/>
+                        <outlet property="ButtonEnterCode" destination="246" id="name-outlet-246"/>
+                        <outlet property="LabelAwesome" destination="243" id="name-outlet-243"/>
+                        <outlet property="LabelCongrats" destination="244" id="name-outlet-244"/>
+                        <outlet property="LabelHint" destination="245" id="name-outlet-245"/>
+                        <outlet property="LabelQuestNumber" destination="241" id="name-outlet-241"/>
+                        <outlet property="TextFieldCode" destination="281" id="name-outlet-281"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="202" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-545" y="-804"/>
+        </scene>
+        <!--Quest Ask Question View Controller-->
+        <scene sceneID="212">
+            <objects>
+                <viewController storyboardIdentifier="QuestAskQuestionViewController" id="213" customClass="QuestAskQuestionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="210"/>
+                        <viewControllerLayoutGuide type="bottom" id="211"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="214">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Quest" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="249">
+                                <rect key="frame" x="0.0" y="30" width="105" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="554"/>
+                                    <constraint firstAttribute="height" constant="21" id="555"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="11 of 12 -" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="250">
+                                <rect key="frame" x="102" y="30" width="80" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="558"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Brilliant!" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="252">
+                                <rect key="frame" x="20" y="326" width="280" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="561"/>
+                                    <constraint firstAttribute="height" constant="35" id="562"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="You've found all of the Beacons, now we have just one more question for you, young traveler:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="10" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="253">
+                                <rect key="frame" x="20" y="357" width="280" height="52"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="565"/>
+                                    <constraint firstAttribute="height" constant="52" id="566"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Are you ready to continue with the next quest?" textAlignment="center" lineBreakMode="clip" numberOfLines="4" minimumScaleFactor="0.80000000000000027" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="254">
+                                <rect key="frame" x="20" y="415" width="280" height="85"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="569"/>
+                                    <constraint firstAttribute="height" constant="85" id="570"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="255">
+                                <rect key="frame" x="170" y="508" width="130" height="40"/>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.81568627450980391" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="573"/>
+                                    <constraint firstAttribute="height" constant="40" id="574"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <state key="normal" title="Answer">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonAnswer_TouchUpInside:" destination="213" eventType="touchUpInside" id="311"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Almost there..." lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="294">
+                                <rect key="frame" x="184" y="30" width="135" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="135" id="577"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.70588235294117652" green="0.73725490196078436" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="295">
+                                <rect key="frame" x="20" y="508" width="130" height="40"/>
+                                <color key="backgroundColor" red="0.16078431372549021" green="0.50196078431372548" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="580"/>
+                                    <constraint firstAttribute="height" constant="40" id="581"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonCancel_TouchUpInside:" destination="213" eventType="touchUpInside" id="312"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ic_code.png" translatesAutoresizingMaskIntoConstraints="NO" id="358">
+                                <rect key="frame" x="0.0" y="65" width="320" height="248"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="248" id="qth-Cc-k6m"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="249" firstAttribute="leading" secondItem="214" secondAttribute="leading" id="552"/>
+                            <constraint firstItem="249" firstAttribute="top" secondItem="214" secondAttribute="top" constant="30" id="553"/>
+                            <constraint firstItem="250" firstAttribute="top" secondItem="214" secondAttribute="top" constant="30" id="556"/>
+                            <constraint firstItem="250" firstAttribute="leading" secondItem="214" secondAttribute="leading" constant="102" id="557"/>
+                            <constraint firstAttribute="trailing" secondItem="252" secondAttribute="trailing" constant="20" id="559"/>
+                            <constraint firstAttribute="bottom" secondItem="252" secondAttribute="bottom" constant="207" id="560"/>
+                            <constraint firstAttribute="bottom" secondItem="253" secondAttribute="bottom" constant="159" id="563"/>
+                            <constraint firstAttribute="trailing" secondItem="253" secondAttribute="trailing" constant="20" id="564"/>
+                            <constraint firstAttribute="bottom" secondItem="254" secondAttribute="bottom" constant="68" id="567"/>
+                            <constraint firstAttribute="trailing" secondItem="254" secondAttribute="trailing" constant="20" id="568"/>
+                            <constraint firstAttribute="bottom" secondItem="255" secondAttribute="bottom" constant="20" id="571"/>
+                            <constraint firstAttribute="trailing" secondItem="255" secondAttribute="trailing" constant="20" id="572"/>
+                            <constraint firstItem="294" firstAttribute="top" secondItem="214" secondAttribute="top" constant="30" id="575"/>
+                            <constraint firstAttribute="trailing" secondItem="294" secondAttribute="trailing" constant="1" id="576"/>
+                            <constraint firstAttribute="bottom" secondItem="295" secondAttribute="bottom" constant="20" id="578"/>
+                            <constraint firstItem="295" firstAttribute="leading" secondItem="214" secondAttribute="leading" constant="20" id="579"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="250" secondAttribute="trailing" constant="138" id="KL8-08-AKX"/>
+                            <constraint firstItem="252" firstAttribute="leading" secondItem="214" secondAttribute="leading" constant="20" id="Qpe-Br-RvQ"/>
+                            <constraint firstItem="294" firstAttribute="leading" secondItem="214" secondAttribute="leading" constant="184" id="RyV-qW-DDy"/>
+                            <constraint firstItem="358" firstAttribute="leading" secondItem="214" secondAttribute="leading" id="Wc1-eH-ZSV"/>
+                            <constraint firstItem="254" firstAttribute="leading" secondItem="214" secondAttribute="leading" constant="20" id="bxh-z4-Rw7"/>
+                            <constraint firstItem="358" firstAttribute="top" secondItem="214" secondAttribute="top" constant="65" id="c5W-Yv-gEF"/>
+                            <constraint firstAttribute="trailing" secondItem="358" secondAttribute="trailing" id="dx7-yB-Vl8"/>
+                            <constraint firstItem="211" firstAttribute="top" secondItem="358" secondAttribute="bottom" constant="255" id="m4x-lj-xOw"/>
+                            <constraint firstItem="253" firstAttribute="leading" secondItem="214" secondAttribute="leading" constant="20" id="tDJ-iB-gPK"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="ButtonAnswer" destination="255" id="name-outlet-255"/>
+                        <outlet property="ButtonCancel" destination="295" id="name-outlet-295"/>
+                        <outlet property="LabelAwesome" destination="252" id="name-outlet-252"/>
+                        <outlet property="LabelCongrats" destination="253" id="name-outlet-253"/>
+                        <outlet property="LabelHint" destination="254" id="name-outlet-254"/>
+                        <outlet property="LabelQuestNumber" destination="250" id="name-outlet-250"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="215" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="168" y="-755"/>
+        </scene>
+        <!--Evolve Quest-->
+        <scene sceneID="1191">
+            <objects>
+                <viewController storyboardIdentifier="QuestViewController2" title="Evolve Quest" id="1192" customClass="QuestViewController2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1189"/>
+                        <viewControllerLayoutGuide type="bottom" id="1190"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1193">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="xamagon.png" translatesAutoresizingMaskIntoConstraints="NO" id="1196">
+                                <rect key="frame" x="0.0" y="66" width="320" height="242"/>
+                            </imageView>
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="ic_no_banana.png" translatesAutoresizingMaskIntoConstraints="NO" id="1199">
+                                <rect key="frame" x="210" y="354" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="1229"/>
+                                    <constraint firstAttribute="height" constant="70" id="1230"/>
+                                </constraints>
+                            </imageView>
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="ic_no_banana.png" translatesAutoresizingMaskIntoConstraints="NO" id="1201">
+                                <rect key="frame" x="40" y="354" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="1237"/>
+                                    <constraint firstAttribute="height" constant="70" id="1238"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="No Beacons nearby." textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1202">
+                                <rect key="frame" x="0.0" y="322" width="320" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="1241"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.70588235294117652" green="0.73725490196078436" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MISSION" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1203">
+                                <rect key="frame" x="0.0" y="432" width="321" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="1244"/>
+                                    <constraint firstAttribute="height" constant="21" id="1245"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                <color key="textColor" red="0.70588235294117652" green="0.73725490196078436" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Welcome to the Xamarin Evolve Quest! Start your journey by talking with a Game Master to scan your first beacon." textAlignment="center" lineBreakMode="clip" numberOfLines="3" minimumScaleFactor="0.69999999999999973" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="1204">
+                                <rect key="frame" x="10" y="449" width="290" height="62"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="1248"/>
+                                    <constraint firstAttribute="height" constant="62" id="1249"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.70588235294117652" green="0.73725490196078436" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1205">
+                                <rect key="frame" x="85" y="519" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.81568627450980391" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="1210"/>
+                                    <constraint firstAttribute="height" constant="40" id="1215"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <state key="normal" title="Finish Quest">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonContinueQuest_TouchUpInside:" destination="1192" eventType="touchUpInside" id="1283"/>
+                                </connections>
+                            </button>
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="ic_no_banana.png" translatesAutoresizingMaskIntoConstraints="NO" id="1200">
+                                <rect key="frame" x="125" y="354" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="1233"/>
+                                    <constraint firstAttribute="height" constant="70" id="1234"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1205" secondAttribute="bottom" constant="9" id="1219"/>
+                            <constraint firstAttribute="bottom" secondItem="1199" secondAttribute="bottom" constant="144" id="1227"/>
+                            <constraint firstAttribute="trailing" secondItem="1199" secondAttribute="trailing" constant="40" id="1228"/>
+                            <constraint firstAttribute="bottom" secondItem="1200" secondAttribute="bottom" constant="144" id="1231"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1200" secondAttribute="trailing" constant="125" id="1232"/>
+                            <constraint firstAttribute="bottom" secondItem="1201" secondAttribute="bottom" constant="144" id="1235"/>
+                            <constraint firstItem="1201" firstAttribute="leading" secondItem="1193" secondAttribute="leading" constant="40" id="1236"/>
+                            <constraint firstAttribute="bottom" secondItem="1202" secondAttribute="bottom" constant="225" id="1239"/>
+                            <constraint firstAttribute="trailing" secondItem="1202" secondAttribute="trailing" id="1240"/>
+                            <constraint firstAttribute="bottom" secondItem="1203" secondAttribute="bottom" constant="115" id="1242"/>
+                            <constraint firstAttribute="trailing" secondItem="1203" secondAttribute="trailing" id="1243"/>
+                            <constraint firstAttribute="bottom" secondItem="1204" secondAttribute="bottom" constant="57" id="1246"/>
+                            <constraint firstAttribute="trailing" secondItem="1204" secondAttribute="trailing" constant="20" id="1247"/>
+                            <constraint firstItem="1202" firstAttribute="leading" secondItem="1193" secondAttribute="leading" id="8dI-S3-JT6"/>
+                            <constraint firstItem="1203" firstAttribute="centerX" secondItem="1200" secondAttribute="centerX" id="BVP-hB-nK1"/>
+                            <constraint firstAttribute="bottom" secondItem="1196" secondAttribute="bottom" constant="260" id="Bmp-Vs-x3J"/>
+                            <constraint firstItem="1205" firstAttribute="leading" secondItem="1193" secondAttribute="leading" constant="85" id="CtK-Vc-0em"/>
+                            <constraint firstItem="1196" firstAttribute="top" secondItem="1193" secondAttribute="top" constant="66" id="HIp-u3-sSc"/>
+                            <constraint firstAttribute="trailing" secondItem="1205" secondAttribute="trailing" constant="85" id="Q3I-OW-hz5"/>
+                            <constraint firstItem="1204" firstAttribute="leading" secondItem="1193" secondAttribute="leading" constant="10" id="Ztt-7z-L2U"/>
+                            <constraint firstAttribute="trailing" secondItem="1196" secondAttribute="trailing" id="a7l-h1-lgD"/>
+                            <constraint firstItem="1200" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1193" secondAttribute="leading" constant="125" id="cCi-Q3-1eD"/>
+                            <constraint firstItem="1196" firstAttribute="leading" secondItem="1193" secondAttribute="leading" id="hoC-Iv-jFs"/>
+                            <constraint firstItem="1203" firstAttribute="leading" secondItem="1193" secondAttribute="leading" id="usp-Xn-2Vf"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="Beacon1" destination="1201" id="name-outlet-1201"/>
+                        <outlet property="Beacon2" destination="1200" id="name-outlet-1200"/>
+                        <outlet property="Beacon3" destination="1199" id="name-outlet-1199"/>
+                        <outlet property="ButtonContinueQuest" destination="1205" id="name-outlet-1205"/>
+                        <outlet property="LabelBeaconsNearby" destination="1202" id="name-outlet-1202"/>
+                        <outlet property="MainImage" destination="1196" id="name-outlet-1196"/>
+                        <outlet property="MainText" destination="1204" id="name-outlet-1204"/>
+                        <segue destination="123" kind="push" id="1284"/>
+                        <segue destination="213" kind="modal" id="1286"/>
+                        <segue destination="200" kind="modal" id="1288"/>
+                        <segue destination="193" kind="modal" id="1290"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1194" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1184" y="162"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_code.png" width="250" height="250"/>
+        <image name="ic_game_completed.png" width="250" height="250"/>
+        <image name="ic_no_banana.png" width="45" height="45"/>
+        <image name="ic_quest_completed.png" width="250" height="250"/>
+        <image name="ic_question.png" width="250" height="250"/>
+        <image name="quest_map.png" width="320" height="1909"/>
+        <image name="xamagon.png" width="501" height="445"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

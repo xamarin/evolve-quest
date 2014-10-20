@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            local:cardCornerRadius="3dp">
+            <ImageView
+                android:src="@drawable/xamarin_icon"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/main_image"
+                android:layout_margin="8dp"
+                android:scaleType="fitCenter" />
+        </android.support.v7.widget.CardView>
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:indeterminate="true"
+            android:indeterminateOnly="true"
+            android:visibility="visible"
+            android:layout_marginBottom="-8dp"
+            android:layout_marginTop="-8dp" />
+    </FrameLayout>
+    <EvolveQuest.Droid.controls.RobotoTextView
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        local:typeface="roboto_light"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/text_beacons"
+        android:text="@string/no_beacons"
+        android:textColor="@color/xam_light_gray" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/ic_no_banana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/beacon1"
+            android:layout_margin="8dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_vertical" />
+        <ImageView
+            android:src="@drawable/ic_no_banana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/beacon2"
+            android:layout_margin="8dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_vertical" />
+        <ImageView
+            android:src="@drawable/ic_no_banana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/beacon3"
+            android:layout_margin="8dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+    <EvolveQuest.Droid.controls.RobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        local:typeface="roboto_bold"
+        android:text="@string/mission"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/xam_light_gray" />
+    <View
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/xam_light_gray"
+        android:layout_width="fill_parent"
+        android:layout_height="1px" />
+    <EvolveQuest.Droid.controls.RobotoTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        local:typeface="roboto_light"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/xam_light_gray"
+        android:id="@+id/main_text"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp" />
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/button_continue"
+        android:background="@drawable/btn_bg"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/finish_quest"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/white" />
+</LinearLayout>

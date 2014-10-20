@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="16dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal|top">
+        <EvolveQuest.Droid.controls.RobotoTextView
+            android:layout_margin="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            local:typeface="roboto_medium"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/quest"
+            android:textColor="@color/xam_blue" />
+        <EvolveQuest.Droid.controls.RobotoTextView
+            android:layout_margin="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            local:typeface="roboto_light"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/text_quest_number"
+            android:text="0 of 12"
+            android:textColor="@color/xam_blue" />
+        <EvolveQuest.Droid.controls.RobotoTextView
+            android:layout_margin="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            local:typeface="roboto_light"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/almost_there"
+            android:textColor="@color/xam_gray" />
+    </LinearLayout>
+    <ImageView
+        android:src="@drawable/ic_question"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:id="@+id/main_image"
+        android:padding="16dp"
+        android:scaleType="fitCenter" />
+    <EvolveQuest.Droid.controls.RobotoTextView
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        local:typeface="roboto_bold"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/brilliant"
+        android:id="@+id/awesome"
+        android:textColor="@color/xam_blue" />
+    <EvolveQuest.Droid.controls.RobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        local:typeface="roboto_light"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/you_found_beacons_code"
+        android:textColor="@color/xam_blue"
+        android:id="@+id/congrats" />
+    <EvolveQuest.Droid.controls.RobotoTextView
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        local:typeface="roboto_light"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/hint"
+        android:textColor="@color/xam_light_gray" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom|center_horizontal">
+        <Button
+            android:text="@string/cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_cancel"
+            android:background="@drawable/btn_bg_blue"
+            android:layout_marginRight="8dp"
+            android:textColor="@android:color/white" />
+        <Button
+            android:text="@string/answer"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_answer"
+            android:background="@drawable/btn_bg"
+            android:layout_marginLeft="8dp"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>

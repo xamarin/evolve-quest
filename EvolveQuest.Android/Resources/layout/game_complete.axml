@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:indeterminate="true"
+        android:indeterminateOnly="true"
+        android:visibility="visible"
+        android:layout_marginBottom="-8dp"
+        android:layout_marginTop="-8dp" />
+    <ImageView
+        android:src="@drawable/ic_game_completed"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:id="@+id/main_image"
+        android:padding="16dp"
+        android:scaleType="fitCenter" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+    <EvolveQuest.Droid.controls.RobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        local:typeface="roboto_light"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/congratulations"
+        android:textColor="@color/xam_blue" />
+    <EvolveQuest.Droid.controls.RobotoTextView
+        android:layout_marginTop="16dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        local:typeface="roboto_light"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/game_end"
+        android:textColor="@color/xam_light_gray" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom|center_horizontal">
+        <Button
+            android:text="@string/share_success"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/share_success"
+            android:background="@drawable/btn_bg"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>

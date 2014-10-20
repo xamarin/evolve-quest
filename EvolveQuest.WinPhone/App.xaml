@@ -1,0 +1,24 @@
+﻿<Application
+    x:Class="EvolveQuest.WinPhone.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone">
+
+    <!--Application Resources-->
+    <Application.Resources>
+        <local:LocalizedStrings xmlns:local="clr-namespace:EvolveQuest.WinPhone" x:Key="LocalizedStrings"/>
+        <!-- Long List Selector Item Templates-->
+        <DataTemplate x:Key="AnswerItemTemplate">
+            <TextBlock Text="{Binding}" Margin="10" FontSize="30" TextWrapping="Wrap"/>
+        </DataTemplate>
+    </Application.Resources>
+
+    <Application.ApplicationLifetimeObjects>
+        <!--Required object that handles lifetime events for the application-->
+        <shell:PhoneApplicationService
+            Launching="Application_Launching" Closing="Application_Closing"
+            Activated="Application_Activated" Deactivated="Application_Deactivated"/>
+    </Application.ApplicationLifetimeObjects>
+
+</Application>
