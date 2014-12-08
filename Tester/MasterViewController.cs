@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using Foundation;
+using UIKit;
 using System.Threading.Tasks;
 using EvolveQuest.Shared.ViewModels;
 
@@ -51,7 +51,7 @@ namespace Tester
       TableView.Source = dataSource = new DataSource(this);
       LoadData();
 
-			var location = new MonoTouch.CoreLocation.CLLocationManager ();
+			var location = new CoreLocation.CLLocationManager ();
 			location.RequestWhenInUseAuthorization ();
     }
 

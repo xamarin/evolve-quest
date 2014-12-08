@@ -1,6 +1,6 @@
 using System;
 using System.Linq;
-using MonoTouch.UIKit;
+using UIKit;
 using EvolveQuest.Shared.Interfaces;
 using GCDiscreetNotification;
 
@@ -72,7 +72,7 @@ namespace EvolveQuest.iOS.Helpers
                         if (args.ButtonIndex == 0)
                             return;
 
-                        completed(args.ButtonIndex - 1);//subtract 1 becuase of cancel button
+                        completed((int)args.ButtonIndex - 1);//subtract 1 becuase of cancel button
 
                     };
                     alert.Show();

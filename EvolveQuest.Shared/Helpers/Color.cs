@@ -1,8 +1,8 @@
 ﻿using System;
 
 #if __IOS__
-using MonoTouch.UIKit;
-using MonoTouch.CoreGraphics;
+using UIKit;
+using CoreGraphics;
 #endif
 
 namespace EvolveQuest.Shared.Helpers

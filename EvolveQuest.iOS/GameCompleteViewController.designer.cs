@@ -5,8 +5,8 @@
 // Manual changes to this file will not be maintained.
 //
 using System;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using Foundation;
+using UIKit;
 using System.CodeDom.Compiler;
 
 namespace EvolveQuest.iOS
@@ -15,19 +15,19 @@ namespace EvolveQuest.iOS
 	partial class GameCompleteViewController
 	{
 		[Outlet]
-		MonoTouch.UIKit.UIButton ButtonShare { get; set; }
+		UIKit.UIButton ButtonShare { get; set; }
 
 		[Outlet]
-		MonoTouch.UIKit.UIImageView ImageMain { get; set; }
+		UIKit.UIImageView ImageMain { get; set; }
 
 		[Outlet]
-		MonoTouch.UIKit.UIImageView ImageSecret { get; set; }
+		UIKit.UIImageView ImageSecret { get; set; }
 
 		[Outlet]
-		MonoTouch.UIKit.UILabel LabelMessage { get; set; }
+		UIKit.UILabel LabelMessage { get; set; }
 
 		[Outlet]
-		MonoTouch.UIKit.UIActivityIndicatorView ProgressBar { get; set; }
+		UIKit.UIActivityIndicatorView ProgressBar { get; set; }
 
 		[Action ("ButtonShare_TouchUpInside:")]
 		[GeneratedCode ("iOS Designer", "1.0")]

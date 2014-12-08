@@ -1,5 +1,5 @@
 using System;
-using MonoTouch.UIKit;
+using UIKit;
 using EvolveQuest.Shared.ViewModels;
 using EvolveQuest.Shared.Helpers;
 using System.Drawing;
@@ -120,11 +120,11 @@ namespace EvolveQuest.iOS
 
 
 			
-        private RectangleF GetTargetPositionFromPercent(double percentageComplete)
+        private CoreGraphics.CGRect GetTargetPositionFromPercent(double percentageComplete)
         {
             if (percentageComplete >= 1.0)
             {
-                return new RectangleF(0, (float)-MapImage.Image.Size.Height + View.Frame.Size.Height, MapImage.Frame.Size.Width, View.Frame.Size.Height);
+                return new CoreGraphics.CGRect(0, (float)-MapImage.Image.Size.Height + View.Frame.Size.Height, MapImage.Frame.Size.Width, View.Frame.Size.Height);
             }
             var height = View.Frame.Size.Height * UIScreen.MainScreen.Scale;
             var position = height * percentageComplete * -1;
@@ -133,7 +133,7 @@ namespace EvolveQuest.iOS
             if (position * -1 > MapImage.Image.Size.Height - View.Frame.Size.Height)
                 position = -MapImage.Image.Size.Height + View.Frame.Size.Height;
 
-            return new RectangleF(0, (float)position, MapImage.Frame.Size.Width, View.Frame.Size.Height);
+            return new CoreGraphics.CGRect(0, (float)position, MapImage.Frame.Size.Width, View.Frame.Size.Height);
         }
 
     }

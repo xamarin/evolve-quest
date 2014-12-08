@@ -92,11 +92,15 @@ namespace EvolveQuest.Shared.ViewModels
 
                 await FileCache.SaveGameDataAsync(result);
                 GameLoaded = true;
+                #if !__UNIFIED__
                 Xamarin.Insights.Track("GameStarted");
+                #endif
             }
             catch (Exception ex)
             {
+                #if !__UNIFIED__
                 Xamarin.Insights.Report(ex);
+                #endif
                 messages.SendMessage("Not all who wander are lost...", "But you might be. Looks like you were unable to load Evolve Quest because you dropped the connection. Please check if you have reception and try again.");
             }
             finally

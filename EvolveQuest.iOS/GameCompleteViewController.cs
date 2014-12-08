@@ -1,8 +1,8 @@
 using System;
 using EvolveQuest.Shared.ViewModels;
-using MonoTouch.CoreLocation;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using CoreLocation;
+using Foundation;
+using UIKit;
 
 namespace EvolveQuest.iOS
 {

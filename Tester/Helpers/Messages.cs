@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 using EvolveQuest.Shared.Interfaces;
-using MonoTouch.UIKit;
+using UIKit;
 
 namespace Tester.Helpers
 {

@@ -35,7 +35,7 @@ namespace EvolveScavengerHunt.Analysis
 				new Solution {
 					Name = "Android",
 					ProjectFiles = new List<string> {
-						Path.Combine(path, "EvolveScavengerHunt.Android/EvolveScavengerHunt.Android.csproj"),
+                        Path.Combine(path, "EvolveQuest.Android/EvolveQuest.Android.csproj"),
 						Path.Combine(path, "EvolveQuest.Shared/EvolveQuest.Shared.projitems")
 					},
 				},

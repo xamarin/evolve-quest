@@ -98,7 +98,9 @@ namespace EvolveQuest.Shared.Helpers
             }
             catch (Exception ex)
             {
+        #if !__UNIFIED__
                 Xamarin.Insights.Report(ex);
+        #endif
                 Console.WriteLine(ex);
                 return string.Empty;
             }

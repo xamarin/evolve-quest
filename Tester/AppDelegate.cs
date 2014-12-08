@@ -1,6 +1,6 @@
 ﻿using System;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using Foundation;
+using UIKit;
 using EvolveQuest.Shared.Helpers;
 using EvolveQuest.Shared.Interfaces;
 using Tester.Helpers;
