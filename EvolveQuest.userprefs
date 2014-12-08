@@ -1,33 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EvolveQuest.Analysis/Properties/AssemblyInfo.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EvolveQuest.iOS/AboutViewController.cs">
     <Files>
-      <File FileName="EvolveQuest.iOS/AppDelegate.cs" Line="13" Column="13" />
-      <File FileName="EvolveQuest.iOS/QuestViewController2.cs" Line="31" Column="31" />
-      <File FileName="EvolveQuest.Shared/Helpers/FileCache.cs" Line="15" Column="15" />
-      <File FileName="EvolveQuest.Shared/Helpers/Settings.cs" Line="1" Column="1" />
-      <File FileName="EvolveQuest.Shared/ViewModels/WelcomeViewModel.cs" Line="30" Column="30" />
-      <File FileName="EvolveQuest.Shared/ViewModels/QuestViewModel.cs" Line="13" Column="13" />
-      <File FileName="EvolveQuest.iOS/Main.cs" Line="23" Column="23" />
-      <File FileName="EvolveQuest.Android/Properties/AssemblyInfo.cs" Line="39" Column="39" />
-      <File FileName="EvolveQuest.Analysis/Program.cs" Line="55" Column="55" />
-      <File FileName="EvolveQuest.Analysis/Properties/AssemblyInfo.cs" Line="40" Column="40" />
+      <File FileName="EvolveQuest.Analysis/Program.cs" Line="8" Column="8" />
+      <File FileName="EvolveQuest.iOS/AboutViewController.cs" Line="13" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Targets" expanded="True">
-            <Node name="EvolveQuest.Android" expanded="True">
-              <Node name="Properties" expanded="True" />
+            <Node name="EvolveQuest.iOS" expanded="True">
+              <Node name="AboutViewController.cs" selected="True" />
             </Node>
-            <Node name="EvolveQuest.iOS" expanded="True" selected="True" />
-          </Node>
-          <Node name="EvolveQuest.Analysis" expanded="True">
-            <Node name="Properties" expanded="True" />
-          </Node>
-          <Node name="Tester" expanded="True">
-            <Node name="Packages" expanded="True" />
-            <Node name="Helpers" expanded="True" />
           </Node>
         </State>
       </Pad>
