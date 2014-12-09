@@ -1,25 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.James's iPhone" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Tester/AppDelegate.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EvolveQuest.Android/obj/Debug/android/src/com/xamarin/evolvequest/public/R.java">
     <Files>
       <File FileName="EvolveQuest.Analysis/Program.cs" Line="1" Column="1" />
-      <File FileName="EvolveQuest.iOS/AboutViewController.cs" Line="10" Column="10" />
-      <File FileName="Tester/Helpers/Messages.cs" Line="9" Column="9" />
-      <File FileName="Tester/Main.cs" Line="7" Column="7" />
-      <File FileName="Tester/AppDelegate.cs" Line="73" Column="73" />
+      <File FileName="EvolveQuest.iOS/AboutViewController.cs" Line="1" Column="1" />
+      <File FileName="Tester/Helpers/Messages.cs" Line="1" Column="1" />
+      <File FileName="Tester/Main.cs" Line="1" Column="1" />
+      <File FileName="Tester/AppDelegate.cs" Line="2" Column="2" />
       <File FileName="Tester/Tester.csproj" Line="1" Column="1" />
-      <File FileName="Tester/MasterViewController.cs" Line="24" Column="24" />
+      <File FileName="Tester/MasterViewController.cs" Line="1" Column="1" />
+      <File FileName="EvolveQuest.Android/obj/Debug/android/src/com/xamarin/evolvequest/public/R.java" Line="23" Column="23" />
+      <File FileName="../../../../../Library/Frameworks/Xamarin.Android.framework/Versions/4.20.0-28/lib/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="Tester" expanded="True" selected="True">
-            <Node name="ComponentReferenceFolder" expanded="True" />
-            <Node name="Helpers" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
