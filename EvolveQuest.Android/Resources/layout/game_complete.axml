@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2" />
-    <EvolveQuest.Droid.controls.RobotoTextView
+    <EvolveQuest.Droid.Controls.RobotoTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         local:typeface="roboto_light"
@@ -34,7 +34,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/congratulations"
         android:textColor="@color/xam_blue" />
-    <EvolveQuest.Droid.controls.RobotoTextView
+    <EvolveQuest.Droid.Controls.RobotoTextView
         android:layout_marginTop="16dp"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"

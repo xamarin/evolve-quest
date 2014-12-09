@@ -26,9 +26,6 @@ namespace EvolveQuest.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::ZXing.Mobile.Resource.Id.contentFrame = global::EvolveQuest.Droid.Resource.Id.contentFrame;
-			global::ZXing.Mobile.Resource.Layout.zxingscanneractivitylayout = global::EvolveQuest.Droid.Resource.Layout.zxingscanneractivitylayout;
-			global::ZXing.Mobile.Resource.Layout.zxingscannerfragmentlayout = global::EvolveQuest.Droid.Resource.Layout.zxingscannerfragmentlayout;
 			global::com.refractored.monodroidtoolkit.Resource.Attribute.circleColor = global::EvolveQuest.Droid.Resource.Attribute.circleColor;
 			global::com.refractored.monodroidtoolkit.Resource.Attribute.circularProgressBarStyle = global::EvolveQuest.Droid.Resource.Attribute.circularProgressBarStyle;
 			global::com.refractored.monodroidtoolkit.Resource.Attribute.circular_gravity = global::EvolveQuest.Droid.Resource.Attribute.circular_gravity;
@@ -134,6 +131,9 @@ namespace EvolveQuest.Droid
 			global::com.refractored.monodroidtoolkit.Resource.Styleable.ProgressButton_unpinnedDrawable = global::EvolveQuest.Droid.Resource.Styleable.ProgressButton_unpinnedDrawable;
 			global::com.refractored.monodroidtoolkit.Resource.Styleable.Theme = global::EvolveQuest.Droid.Resource.Styleable.Theme;
 			global::com.refractored.monodroidtoolkit.Resource.Styleable.Theme_circularProgressBarStyle = global::EvolveQuest.Droid.Resource.Styleable.Theme_circularProgressBarStyle;
+			global::ZXing.Mobile.Resource.Id.contentFrame = global::EvolveQuest.Droid.Resource.Id.contentFrame;
+			global::ZXing.Mobile.Resource.Layout.zxingscanneractivitylayout = global::EvolveQuest.Droid.Resource.Layout.zxingscanneractivitylayout;
+			global::ZXing.Mobile.Resource.Layout.zxingscannerfragmentlayout = global::EvolveQuest.Droid.Resource.Layout.zxingscannerfragmentlayout;
 			global::Xamarin.InsightsCore.Resource.String.ApplicationName = global::EvolveQuest.Droid.Resource.String.ApplicationName;
 			global::Xamarin.InsightsCore.Resource.String.Hello = global::EvolveQuest.Droid.Resource.String.Hello;
 		}
@@ -178,77 +178,104 @@ namespace EvolveQuest.Droid
 		public partial class Attribute
 		{
 			
-			// aapt resource value: 0x7f010015
-			public const int cardBackgroundColor = 2130771989;
-			
-			// aapt resource value: 0x7f010016
-			public const int cardCornerRadius = 2130771990;
-			
-			// aapt resource value: 0x7f010003
-			public const int circleColor = 2130771971;
-			
-			// aapt resource value: 0x7f010014
-			public const int circularProgressBarStyle = 2130771988;
-			
-			// aapt resource value: 0x7f01000c
-			public const int circular_gravity = 2130771980;
-			
-			// aapt resource value: 0x7f010012
-			public const int circular_indeterminate = 2130771986;
-			
-			// aapt resource value: 0x7f010013
-			public const int circular_indeterminate_interval = 2130771987;
-			
-			// aapt resource value: 0x7f01000f
-			public const int circular_marker_progress = 2130771983;
-			
-			// aapt resource value: 0x7f01000e
-			public const int circular_progress = 2130771982;
-			
-			// aapt resource value: 0x7f010011
-			public const int circular_progress_background_color = 2130771985;
-			
-			// aapt resource value: 0x7f010010
-			public const int circular_progress_color = 2130771984;
-			
-			// aapt resource value: 0x7f01000d
-			public const int circular_stroke_width = 2130771981;
-			
-			// aapt resource value: 0x7f01000a
-			public const int indeterminate = 2130771978;
-			
-			// aapt resource value: 0x7f01000b
-			public const int indeterminate_interval = 2130771979;
-			
-			// aapt resource value: 0x7f010008
-			public const int innerSize = 2130771976;
-			
-			// aapt resource value: 0x7f010002
-			public const int max = 2130771970;
-			
-			// aapt resource value: 0x7f010009
-			public const int pinned = 2130771977;
-			
-			// aapt resource value: 0x7f010005
-			public const int pinnedDrawable = 2130771973;
+			// aapt resource value: 0x7f010000
+			public const int cardBackgroundColor = 2130771968;
 			
 			// aapt resource value: 0x7f010001
-			public const int progress = 2130771969;
+			public const int cardCornerRadius = 2130771969;
 			
-			// aapt resource value: 0x7f010000
-			public const int progressButtonStyle = 2130771968;
+			// aapt resource value: 0x7f010002
+			public const int cardElevation = 2130771970;
+			
+			// aapt resource value: 0x7f010003
+			public const int cardMaxElevation = 2130771971;
+			
+			// aapt resource value: 0x7f010005
+			public const int cardPreventCornerOverlap = 2130771973;
 			
 			// aapt resource value: 0x7f010004
-			public const int progressColor = 2130771972;
+			public const int cardUseCompatPadding = 2130771972;
 			
-			// aapt resource value: 0x7f010007
-			public const int shadowDrawable = 2130771975;
+			// aapt resource value: 0x7f01000e
+			public const int circleColor = 2130771982;
+			
+			// aapt resource value: 0x7f01001f
+			public const int circularProgressBarStyle = 2130771999;
 			
 			// aapt resource value: 0x7f010017
-			public const int typeface = 2130771991;
+			public const int circular_gravity = 2130771991;
+			
+			// aapt resource value: 0x7f01001d
+			public const int circular_indeterminate = 2130771997;
+			
+			// aapt resource value: 0x7f01001e
+			public const int circular_indeterminate_interval = 2130771998;
+			
+			// aapt resource value: 0x7f01001a
+			public const int circular_marker_progress = 2130771994;
+			
+			// aapt resource value: 0x7f010019
+			public const int circular_progress = 2130771993;
+			
+			// aapt resource value: 0x7f01001c
+			public const int circular_progress_background_color = 2130771996;
+			
+			// aapt resource value: 0x7f01001b
+			public const int circular_progress_color = 2130771995;
+			
+			// aapt resource value: 0x7f010018
+			public const int circular_stroke_width = 2130771992;
 			
 			// aapt resource value: 0x7f010006
-			public const int unpinnedDrawable = 2130771974;
+			public const int contentPadding = 2130771974;
+			
+			// aapt resource value: 0x7f01000a
+			public const int contentPaddingBottom = 2130771978;
+			
+			// aapt resource value: 0x7f010007
+			public const int contentPaddingLeft = 2130771975;
+			
+			// aapt resource value: 0x7f010008
+			public const int contentPaddingRight = 2130771976;
+			
+			// aapt resource value: 0x7f010009
+			public const int contentPaddingTop = 2130771977;
+			
+			// aapt resource value: 0x7f010015
+			public const int indeterminate = 2130771989;
+			
+			// aapt resource value: 0x7f010016
+			public const int indeterminate_interval = 2130771990;
+			
+			// aapt resource value: 0x7f010013
+			public const int innerSize = 2130771987;
+			
+			// aapt resource value: 0x7f01000d
+			public const int max = 2130771981;
+			
+			// aapt resource value: 0x7f010014
+			public const int pinned = 2130771988;
+			
+			// aapt resource value: 0x7f010010
+			public const int pinnedDrawable = 2130771984;
+			
+			// aapt resource value: 0x7f01000c
+			public const int progress = 2130771980;
+			
+			// aapt resource value: 0x7f01000b
+			public const int progressButtonStyle = 2130771979;
+			
+			// aapt resource value: 0x7f01000f
+			public const int progressColor = 2130771983;
+			
+			// aapt resource value: 0x7f010012
+			public const int shadowDrawable = 2130771986;
+			
+			// aapt resource value: 0x7f010020
+			public const int typeface = 2130772000;
+			
+			// aapt resource value: 0x7f010011
+			public const int unpinnedDrawable = 2130771985;
 			
 			static Attribute()
 			{
@@ -263,146 +290,146 @@ namespace EvolveQuest.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f08002a
-			public const int btn_bg_color = 2131230762;
+			// aapt resource value: 0x7f06002a
+			public const int btn_bg_color = 2131099690;
 			
-			// aapt resource value: 0x7f08002d
-			public const int btn_bg_color_blue = 2131230765;
+			// aapt resource value: 0x7f06002d
+			public const int btn_bg_color_blue = 2131099693;
 			
-			// aapt resource value: 0x7f08002b
-			public const int btn_bg_shadow_color = 2131230763;
+			// aapt resource value: 0x7f06002b
+			public const int btn_bg_shadow_color = 2131099691;
 			
-			// aapt resource value: 0x7f08002e
-			public const int btn_bg_shadow_color_blue = 2131230766;
+			// aapt resource value: 0x7f06002e
+			public const int btn_bg_shadow_color_blue = 2131099694;
 			
-			// aapt resource value: 0x7f08001f
-			public const int cardview_dark_background = 2131230751;
+			// aapt resource value: 0x7f060000
+			public const int cardview_dark_background = 2131099648;
 			
-			// aapt resource value: 0x7f080020
-			public const int cardview_light_background = 2131230752;
+			// aapt resource value: 0x7f060001
+			public const int cardview_light_background = 2131099649;
 			
-			// aapt resource value: 0x7f080021
-			public const int cardview_shadow_end_color = 2131230753;
+			// aapt resource value: 0x7f060002
+			public const int cardview_shadow_end_color = 2131099650;
 			
-			// aapt resource value: 0x7f080022
-			public const int cardview_shadow_start_color = 2131230754;
+			// aapt resource value: 0x7f060003
+			public const int cardview_shadow_start_color = 2131099651;
 			
-			// aapt resource value: 0x7f080000
-			public const int progress_default_circle_color = 2131230720;
+			// aapt resource value: 0x7f060004
+			public const int progress_default_circle_color = 2131099652;
 			
-			// aapt resource value: 0x7f080001
-			public const int progress_default_progress_color = 2131230721;
+			// aapt resource value: 0x7f060005
+			public const int progress_default_progress_color = 2131099653;
 			
-			// aapt resource value: 0x7f08002c
-			public const int quest_color = 2131230764;
+			// aapt resource value: 0x7f06002c
+			public const int quest_color = 2131099692;
 			
-			// aapt resource value: 0x7f080002
-			public const int refractored_background_dark = 2131230722;
+			// aapt resource value: 0x7f060006
+			public const int refractored_background_dark = 2131099654;
 			
-			// aapt resource value: 0x7f080007
-			public const int refractored_background_holo_dark = 2131230727;
+			// aapt resource value: 0x7f06000b
+			public const int refractored_background_holo_dark = 2131099659;
 			
-			// aapt resource value: 0x7f080008
-			public const int refractored_background_holo_light = 2131230728;
+			// aapt resource value: 0x7f06000c
+			public const int refractored_background_holo_light = 2131099660;
 			
-			// aapt resource value: 0x7f080003
-			public const int refractored_background_light = 2131230723;
+			// aapt resource value: 0x7f060007
+			public const int refractored_background_light = 2131099655;
 			
-			// aapt resource value: 0x7f080004
-			public const int refractored_bright_foreground_dark = 2131230724;
+			// aapt resource value: 0x7f060008
+			public const int refractored_bright_foreground_dark = 2131099656;
 			
-			// aapt resource value: 0x7f080006
-			public const int refractored_bright_foreground_dark_disabled = 2131230726;
+			// aapt resource value: 0x7f06000a
+			public const int refractored_bright_foreground_dark_disabled = 2131099658;
 			
-			// aapt resource value: 0x7f08000b
-			public const int refractored_bright_foreground_disabled_holo_dark = 2131230731;
+			// aapt resource value: 0x7f06000f
+			public const int refractored_bright_foreground_disabled_holo_dark = 2131099663;
 			
-			// aapt resource value: 0x7f08000c
-			public const int refractored_bright_foreground_disabled_holo_light = 2131230732;
+			// aapt resource value: 0x7f060010
+			public const int refractored_bright_foreground_disabled_holo_light = 2131099664;
 			
-			// aapt resource value: 0x7f080009
-			public const int refractored_bright_foreground_holo_dark = 2131230729;
+			// aapt resource value: 0x7f06000d
+			public const int refractored_bright_foreground_holo_dark = 2131099661;
 			
-			// aapt resource value: 0x7f08000a
-			public const int refractored_bright_foreground_holo_light = 2131230730;
+			// aapt resource value: 0x7f06000e
+			public const int refractored_bright_foreground_holo_light = 2131099662;
 			
-			// aapt resource value: 0x7f080005
-			public const int refractored_bright_foreground_light = 2131230725;
+			// aapt resource value: 0x7f060009
+			public const int refractored_bright_foreground_light = 2131099657;
 			
-			// aapt resource value: 0x7f08000e
-			public const int refractored_dim_foreground_disabled_holo_dark = 2131230734;
+			// aapt resource value: 0x7f060012
+			public const int refractored_dim_foreground_disabled_holo_dark = 2131099666;
 			
-			// aapt resource value: 0x7f080011
-			public const int refractored_dim_foreground_disabled_holo_light = 2131230737;
+			// aapt resource value: 0x7f060015
+			public const int refractored_dim_foreground_disabled_holo_light = 2131099669;
 			
-			// aapt resource value: 0x7f08000d
-			public const int refractored_dim_foreground_holo_dark = 2131230733;
+			// aapt resource value: 0x7f060011
+			public const int refractored_dim_foreground_holo_dark = 2131099665;
 			
-			// aapt resource value: 0x7f080010
-			public const int refractored_dim_foreground_holo_light = 2131230736;
+			// aapt resource value: 0x7f060014
+			public const int refractored_dim_foreground_holo_light = 2131099668;
 			
-			// aapt resource value: 0x7f080013
-			public const int refractored_highlighted_text_holo_dark = 2131230739;
+			// aapt resource value: 0x7f060017
+			public const int refractored_highlighted_text_holo_dark = 2131099671;
 			
-			// aapt resource value: 0x7f080014
-			public const int refractored_highlighted_text_holo_light = 2131230740;
+			// aapt resource value: 0x7f060018
+			public const int refractored_highlighted_text_holo_light = 2131099672;
 			
-			// aapt resource value: 0x7f08000f
-			public const int refractored_hint_foreground_holo_dark = 2131230735;
+			// aapt resource value: 0x7f060013
+			public const int refractored_hint_foreground_holo_dark = 2131099667;
 			
-			// aapt resource value: 0x7f080012
-			public const int refractored_hint_foreground_holo_light = 2131230738;
+			// aapt resource value: 0x7f060016
+			public const int refractored_hint_foreground_holo_light = 2131099670;
 			
-			// aapt resource value: 0x7f08001e
-			public const int refractored_holo_blue_bright = 2131230750;
+			// aapt resource value: 0x7f060022
+			public const int refractored_holo_blue_bright = 2131099682;
 			
-			// aapt resource value: 0x7f080018
-			public const int refractored_holo_blue_dark = 2131230744;
+			// aapt resource value: 0x7f06001c
+			public const int refractored_holo_blue_dark = 2131099676;
 			
-			// aapt resource value: 0x7f080015
-			public const int refractored_holo_blue_light = 2131230741;
+			// aapt resource value: 0x7f060019
+			public const int refractored_holo_blue_light = 2131099673;
 			
-			// aapt resource value: 0x7f080019
-			public const int refractored_holo_green_dark = 2131230745;
+			// aapt resource value: 0x7f06001d
+			public const int refractored_holo_green_dark = 2131099677;
 			
-			// aapt resource value: 0x7f080016
-			public const int refractored_holo_green_light = 2131230742;
+			// aapt resource value: 0x7f06001a
+			public const int refractored_holo_green_light = 2131099674;
 			
-			// aapt resource value: 0x7f08001d
-			public const int refractored_holo_orange_dark = 2131230749;
+			// aapt resource value: 0x7f060021
+			public const int refractored_holo_orange_dark = 2131099681;
 			
-			// aapt resource value: 0x7f08001c
-			public const int refractored_holo_orange_light = 2131230748;
+			// aapt resource value: 0x7f060020
+			public const int refractored_holo_orange_light = 2131099680;
 			
-			// aapt resource value: 0x7f08001b
-			public const int refractored_holo_purple = 2131230747;
+			// aapt resource value: 0x7f06001f
+			public const int refractored_holo_purple = 2131099679;
 			
-			// aapt resource value: 0x7f08001a
-			public const int refractored_holo_red_dark = 2131230746;
+			// aapt resource value: 0x7f06001e
+			public const int refractored_holo_red_dark = 2131099678;
 			
-			// aapt resource value: 0x7f080017
-			public const int refractored_holo_red_light = 2131230743;
+			// aapt resource value: 0x7f06001b
+			public const int refractored_holo_red_light = 2131099675;
 			
-			// aapt resource value: 0x7f080025
-			public const int xam_blue = 2131230757;
+			// aapt resource value: 0x7f060025
+			public const int xam_blue = 2131099685;
 			
-			// aapt resource value: 0x7f080023
-			public const int xam_dark_blue = 2131230755;
+			// aapt resource value: 0x7f060023
+			public const int xam_dark_blue = 2131099683;
 			
-			// aapt resource value: 0x7f080028
-			public const int xam_gray = 2131230760;
+			// aapt resource value: 0x7f060028
+			public const int xam_gray = 2131099688;
 			
-			// aapt resource value: 0x7f080026
-			public const int xam_green = 2131230758;
+			// aapt resource value: 0x7f060026
+			public const int xam_green = 2131099686;
 			
-			// aapt resource value: 0x7f080027
-			public const int xam_light_gray = 2131230759;
+			// aapt resource value: 0x7f060027
+			public const int xam_light_gray = 2131099687;
 			
-			// aapt resource value: 0x7f080029
-			public const int xam_medium_blue = 2131230761;
+			// aapt resource value: 0x7f060029
+			public const int xam_medium_blue = 2131099689;
 			
-			// aapt resource value: 0x7f080024
-			public const int xam_purple = 2131230756;
+			// aapt resource value: 0x7f060024
+			public const int xam_purple = 2131099684;
 			
 			static Color()
 			{
@@ -417,20 +444,20 @@ namespace EvolveQuest.Droid
 		public partial class Dimension
 		{
 			
-			// aapt resource value: 0x7f090004
-			public const int btn_corner_radius = 2131296260;
+			// aapt resource value: 0x7f070004
+			public const int btn_corner_radius = 2131165188;
 			
-			// aapt resource value: 0x7f090001
-			public const int cardview_default_radius = 2131296257;
+			// aapt resource value: 0x7f070000
+			public const int cardview_compat_inset_shadow = 2131165184;
 			
-			// aapt resource value: 0x7f090002
-			public const int cardview_elevation = 2131296258;
+			// aapt resource value: 0x7f070001
+			public const int cardview_default_elevation = 2131165185;
 			
-			// aapt resource value: 0x7f090003
-			public const int cardview_shadow_size = 2131296259;
+			// aapt resource value: 0x7f070002
+			public const int cardview_default_radius = 2131165186;
 			
-			// aapt resource value: 0x7f090000
-			public const int progress_inner_size = 2131296256;
+			// aapt resource value: 0x7f070003
+			public const int progress_inner_size = 2131165187;
 			
 			static Dimension()
 			{
@@ -701,176 +728,176 @@ namespace EvolveQuest.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070038
-			public const int action_about = 2131165240;
+			// aapt resource value: 0x7f0c0038
+			public const int action_about = 2131492920;
 			
-			// aapt resource value: 0x7f070037
-			public const int action_scan = 2131165239;
+			// aapt resource value: 0x7f0c0037
+			public const int action_scan = 2131492919;
 			
-			// aapt resource value: 0x7f07002a
-			public const int awesome = 2131165226;
+			// aapt resource value: 0x7f0c002a
+			public const int awesome = 2131492906;
 			
-			// aapt resource value: 0x7f070031
-			public const int background = 2131165233;
+			// aapt resource value: 0x7f0c0031
+			public const int background = 2131492913;
 			
-			// aapt resource value: 0x7f070024
-			public const int beacon1 = 2131165220;
+			// aapt resource value: 0x7f0c0024
+			public const int beacon1 = 2131492900;
 			
-			// aapt resource value: 0x7f070025
-			public const int beacon2 = 2131165221;
+			// aapt resource value: 0x7f0c0025
+			public const int beacon2 = 2131492901;
 			
-			// aapt resource value: 0x7f070026
-			public const int beacon3 = 2131165222;
+			// aapt resource value: 0x7f0c0026
+			public const int beacon3 = 2131492902;
 			
-			// aapt resource value: 0x7f070000
-			public const int bottom = 2131165184;
+			// aapt resource value: 0x7f0c0000
+			public const int bottom = 2131492864;
 			
-			// aapt resource value: 0x7f070034
-			public const int button_about = 2131165236;
+			// aapt resource value: 0x7f0c0034
+			public const int button_about = 2131492916;
 			
-			// aapt resource value: 0x7f070030
-			public const int button_answer = 2131165232;
+			// aapt resource value: 0x7f0c0030
+			public const int button_answer = 2131492912;
 			
-			// aapt resource value: 0x7f07002e
-			public const int button_cancel = 2131165230;
+			// aapt resource value: 0x7f0c002e
+			public const int button_cancel = 2131492910;
 			
-			// aapt resource value: 0x7f070028
-			public const int button_continue = 2131165224;
+			// aapt resource value: 0x7f0c0028
+			public const int button_continue = 2131492904;
 			
-			// aapt resource value: 0x7f07002f
-			public const int button_enter = 2131165231;
+			// aapt resource value: 0x7f0c002f
+			public const int button_enter = 2131492911;
 			
-			// aapt resource value: 0x7f070035
-			public const int button_play = 2131165237;
+			// aapt resource value: 0x7f0c0035
+			public const int button_play = 2131492917;
 			
-			// aapt resource value: 0x7f070022
-			public const int card_view = 2131165218;
+			// aapt resource value: 0x7f0c0022
+			public const int card_view = 2131492898;
 			
-			// aapt resource value: 0x7f070001
-			public const int center = 2131165185;
+			// aapt resource value: 0x7f0c0001
+			public const int center = 2131492865;
 			
-			// aapt resource value: 0x7f070002
-			public const int center_horizontal = 2131165186;
+			// aapt resource value: 0x7f0c0002
+			public const int center_horizontal = 2131492866;
 			
-			// aapt resource value: 0x7f070003
-			public const int center_vertical = 2131165187;
+			// aapt resource value: 0x7f0c0003
+			public const int center_vertical = 2131492867;
 			
-			// aapt resource value: 0x7f070004
-			public const int clip = 2131165188;
+			// aapt resource value: 0x7f0c0004
+			public const int clip = 2131492868;
 			
-			// aapt resource value: 0x7f070005
-			public const int clip_horizontal = 2131165189;
+			// aapt resource value: 0x7f0c0005
+			public const int clip_horizontal = 2131492869;
 			
-			// aapt resource value: 0x7f070006
-			public const int clip_vertical = 2131165190;
+			// aapt resource value: 0x7f0c0006
+			public const int clip_vertical = 2131492870;
 			
-			// aapt resource value: 0x7f07002d
-			public const int code = 2131165229;
+			// aapt resource value: 0x7f0c002d
+			public const int code = 2131492909;
 			
-			// aapt resource value: 0x7f07002b
-			public const int congrats = 2131165227;
+			// aapt resource value: 0x7f0c002b
+			public const int congrats = 2131492907;
 			
-			// aapt resource value: 0x7f070036
-			public const int contentFrame = 2131165238;
+			// aapt resource value: 0x7f0c0036
+			public const int contentFrame = 2131492918;
 			
-			// aapt resource value: 0x7f070007
-			public const int end = 2131165191;
+			// aapt resource value: 0x7f0c0007
+			public const int end = 2131492871;
 			
-			// aapt resource value: 0x7f070008
-			public const int fill = 2131165192;
+			// aapt resource value: 0x7f0c0008
+			public const int fill = 2131492872;
 			
-			// aapt resource value: 0x7f070009
-			public const int fill_horizontal = 2131165193;
+			// aapt resource value: 0x7f0c0009
+			public const int fill_horizontal = 2131492873;
 			
-			// aapt resource value: 0x7f07000a
-			public const int fill_vertical = 2131165194;
+			// aapt resource value: 0x7f0c000a
+			public const int fill_vertical = 2131492874;
 			
-			// aapt resource value: 0x7f07002c
-			public const int hint = 2131165228;
+			// aapt resource value: 0x7f0c002c
+			public const int hint = 2131492908;
 			
-			// aapt resource value: 0x7f07000b
-			public const int left = 2131165195;
+			// aapt resource value: 0x7f0c000b
+			public const int left = 2131492875;
 			
-			// aapt resource value: 0x7f070020
-			public const int main_image = 2131165216;
+			// aapt resource value: 0x7f0c0020
+			public const int main_image = 2131492896;
 			
-			// aapt resource value: 0x7f070027
-			public const int main_text = 2131165223;
+			// aapt resource value: 0x7f0c0027
+			public const int main_text = 2131492903;
 			
-			// aapt resource value: 0x7f070033
-			public const int map = 2131165235;
+			// aapt resource value: 0x7f0c0033
+			public const int map = 2131492915;
 			
-			// aapt resource value: 0x7f070032
-			public const int map_scroll = 2131165234;
+			// aapt resource value: 0x7f0c0032
+			public const int map_scroll = 2131492914;
 			
-			// aapt resource value: 0x7f07001f
-			public const int progressBar = 2131165215;
+			// aapt resource value: 0x7f0c001f
+			public const int progressBar = 2131492895;
 			
-			// aapt resource value: 0x7f07000c
-			public const int right = 2131165196;
+			// aapt resource value: 0x7f0c000c
+			public const int right = 2131492876;
 			
-			// aapt resource value: 0x7f070019
-			public const int roboto_black = 2131165209;
+			// aapt resource value: 0x7f0c000f
+			public const int roboto_black = 2131492879;
 			
-			// aapt resource value: 0x7f07001a
-			public const int roboto_black_italic = 2131165210;
+			// aapt resource value: 0x7f0c0010
+			public const int roboto_black_italic = 2131492880;
 			
-			// aapt resource value: 0x7f070017
-			public const int roboto_bold = 2131165207;
+			// aapt resource value: 0x7f0c0011
+			public const int roboto_bold = 2131492881;
 			
-			// aapt resource value: 0x7f070018
-			public const int roboto_bold_italic = 2131165208;
+			// aapt resource value: 0x7f0c0012
+			public const int roboto_bold_italic = 2131492882;
 			
-			// aapt resource value: 0x7f07001b
-			public const int roboto_condensed = 2131165211;
+			// aapt resource value: 0x7f0c0013
+			public const int roboto_condensed = 2131492883;
 			
-			// aapt resource value: 0x7f07001d
-			public const int roboto_condensed_bold = 2131165213;
+			// aapt resource value: 0x7f0c0014
+			public const int roboto_condensed_bold = 2131492884;
 			
-			// aapt resource value: 0x7f07001e
-			public const int roboto_condensed_bold_italic = 2131165214;
+			// aapt resource value: 0x7f0c0015
+			public const int roboto_condensed_bold_italic = 2131492885;
 			
-			// aapt resource value: 0x7f07001c
-			public const int roboto_condensed_italic = 2131165212;
+			// aapt resource value: 0x7f0c0016
+			public const int roboto_condensed_italic = 2131492886;
 			
-			// aapt resource value: 0x7f070014
-			public const int roboto_italic = 2131165204;
+			// aapt resource value: 0x7f0c0017
+			public const int roboto_italic = 2131492887;
 			
-			// aapt resource value: 0x7f070011
-			public const int roboto_light = 2131165201;
+			// aapt resource value: 0x7f0c0018
+			public const int roboto_light = 2131492888;
 			
-			// aapt resource value: 0x7f070012
-			public const int roboto_light_italic = 2131165202;
+			// aapt resource value: 0x7f0c0019
+			public const int roboto_light_italic = 2131492889;
 			
-			// aapt resource value: 0x7f070015
-			public const int roboto_medium = 2131165205;
+			// aapt resource value: 0x7f0c001a
+			public const int roboto_medium = 2131492890;
 			
-			// aapt resource value: 0x7f070016
-			public const int roboto_medium_italic = 2131165206;
+			// aapt resource value: 0x7f0c001b
+			public const int roboto_medium_italic = 2131492891;
 			
-			// aapt resource value: 0x7f070013
-			public const int roboto_regular = 2131165203;
+			// aapt resource value: 0x7f0c001c
+			public const int roboto_regular = 2131492892;
 			
-			// aapt resource value: 0x7f07000f
-			public const int roboto_thin = 2131165199;
+			// aapt resource value: 0x7f0c001d
+			public const int roboto_thin = 2131492893;
 			
-			// aapt resource value: 0x7f070010
-			public const int roboto_thin_italic = 2131165200;
+			// aapt resource value: 0x7f0c001e
+			public const int roboto_thin_italic = 2131492894;
 			
-			// aapt resource value: 0x7f070021
-			public const int share_success = 2131165217;
+			// aapt resource value: 0x7f0c0021
+			public const int share_success = 2131492897;
 			
-			// aapt resource value: 0x7f07000d
-			public const int start = 2131165197;
+			// aapt resource value: 0x7f0c000d
+			public const int start = 2131492877;
 			
-			// aapt resource value: 0x7f070023
-			public const int text_beacons = 2131165219;
+			// aapt resource value: 0x7f0c0023
+			public const int text_beacons = 2131492899;
 			
-			// aapt resource value: 0x7f070029
-			public const int text_quest_number = 2131165225;
+			// aapt resource value: 0x7f0c0029
+			public const int text_quest_number = 2131492905;
 			
-			// aapt resource value: 0x7f07000e
-			public const int top = 2131165198;
+			// aapt resource value: 0x7f0c000e
+			public const int top = 2131492878;
 			
 			static Id()
 			{
@@ -941,11 +968,11 @@ namespace EvolveQuest.Droid
 		public partial class Menu
 		{
 			
-			// aapt resource value: 0x7f0c0000
-			public const int menu_home = 2131492864;
+			// aapt resource value: 0x7f0b0000
+			public const int menu_home = 2131427328;
 			
-			// aapt resource value: 0x7f0c0001
-			public const int menu_welcome = 2131492865;
+			// aapt resource value: 0x7f0b0001
+			public const int menu_welcome = 2131427329;
 			
 			static Menu()
 			{
@@ -960,110 +987,110 @@ namespace EvolveQuest.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f060001
-			public const int ApplicationName = 2131099649;
+			// aapt resource value: 0x7f090001
+			public const int ApplicationName = 2131296257;
 			
-			// aapt resource value: 0x7f060000
-			public const int Hello = 2131099648;
+			// aapt resource value: 0x7f090000
+			public const int Hello = 2131296256;
 			
-			// aapt resource value: 0x7f06000a
-			public const int about = 2131099658;
+			// aapt resource value: 0x7f09000a
+			public const int about = 2131296266;
 			
-			// aapt resource value: 0x7f06001d
-			public const int all_found = 2131099677;
+			// aapt resource value: 0x7f09001d
+			public const int all_found = 2131296285;
 			
-			// aapt resource value: 0x7f060018
-			public const int almost_there = 2131099672;
+			// aapt resource value: 0x7f090018
+			public const int almost_there = 2131296280;
 			
-			// aapt resource value: 0x7f060004
-			public const int answer = 2131099652;
+			// aapt resource value: 0x7f090004
+			public const int answer = 2131296260;
 			
-			// aapt resource value: 0x7f060006
-			public const int app_name = 2131099654;
+			// aapt resource value: 0x7f090006
+			public const int app_name = 2131296262;
 			
-			// aapt resource value: 0x7f06000e
-			public const int awesome = 2131099662;
+			// aapt resource value: 0x7f09000e
+			public const int awesome = 2131296270;
 			
-			// aapt resource value: 0x7f06000d
-			public const int beacons_near = 2131099661;
+			// aapt resource value: 0x7f09000d
+			public const int beacons_near = 2131296269;
 			
-			// aapt resource value: 0x7f060010
-			public const int brilliant = 2131099664;
+			// aapt resource value: 0x7f090010
+			public const int brilliant = 2131296272;
 			
-			// aapt resource value: 0x7f060003
-			public const int cancel = 2131099651;
+			// aapt resource value: 0x7f090003
+			public const int cancel = 2131296259;
 			
-			// aapt resource value: 0x7f06001c
-			public const int code_hint = 2131099676;
+			// aapt resource value: 0x7f09001c
+			public const int code_hint = 2131296284;
 			
-			// aapt resource value: 0x7f060017
-			public const int completed = 2131099671;
+			// aapt resource value: 0x7f090017
+			public const int completed = 2131296279;
 			
-			// aapt resource value: 0x7f06001f
-			public const int congratulations = 2131099679;
+			// aapt resource value: 0x7f09001f
+			public const int congratulations = 2131296287;
 			
-			// aapt resource value: 0x7f060005
-			public const int continue_game = 2131099653;
+			// aapt resource value: 0x7f090005
+			public const int continue_game = 2131296261;
 			
-			// aapt resource value: 0x7f060015
-			public const int continue_quest = 2131099669;
+			// aapt resource value: 0x7f090015
+			public const int continue_quest = 2131296277;
 			
-			// aapt resource value: 0x7f06001b
-			public const int correct_answer = 2131099675;
+			// aapt resource value: 0x7f09001b
+			public const int correct_answer = 2131296283;
 			
-			// aapt resource value: 0x7f06001a
-			public const int correct_code = 2131099674;
+			// aapt resource value: 0x7f09001a
+			public const int correct_code = 2131296282;
 			
-			// aapt resource value: 0x7f060008
-			public const int enter_code = 2131099656;
+			// aapt resource value: 0x7f090008
+			public const int enter_code = 2131296264;
 			
-			// aapt resource value: 0x7f06000f
-			public const int fantastic = 2131099663;
+			// aapt resource value: 0x7f09000f
+			public const int fantastic = 2131296271;
 			
-			// aapt resource value: 0x7f06001e
-			public const int finish_quest = 2131099678;
+			// aapt resource value: 0x7f09001e
+			public const int finish_quest = 2131296286;
 			
-			// aapt resource value: 0x7f060022
-			public const int game_end = 2131099682;
+			// aapt resource value: 0x7f090022
+			public const int game_end = 2131296290;
 			
-			// aapt resource value: 0x7f060009
-			public const int menu_about = 2131099657;
+			// aapt resource value: 0x7f090009
+			public const int menu_about = 2131296265;
 			
-			// aapt resource value: 0x7f060007
-			public const int menu_scan = 2131099655;
+			// aapt resource value: 0x7f090007
+			public const int menu_scan = 2131296263;
 			
-			// aapt resource value: 0x7f06000b
-			public const int mission = 2131099659;
+			// aapt resource value: 0x7f09000b
+			public const int mission = 2131296267;
 			
-			// aapt resource value: 0x7f06000c
-			public const int no_beacons = 2131099660;
+			// aapt resource value: 0x7f09000c
+			public const int no_beacons = 2131296268;
 			
-			// aapt resource value: 0x7f060014
-			public const int not_so_fast_code = 2131099668;
+			// aapt resource value: 0x7f090014
+			public const int not_so_fast_code = 2131296276;
 			
-			// aapt resource value: 0x7f060013
-			public const int not_so_fast_question = 2131099667;
+			// aapt resource value: 0x7f090013
+			public const int not_so_fast_question = 2131296275;
 			
-			// aapt resource value: 0x7f060002
-			public const int play = 2131099650;
+			// aapt resource value: 0x7f090002
+			public const int play = 2131296258;
 			
-			// aapt resource value: 0x7f060016
-			public const int quest = 2131099670;
+			// aapt resource value: 0x7f090016
+			public const int quest = 2131296278;
 			
-			// aapt resource value: 0x7f060020
-			public const int share_success = 2131099680;
+			// aapt resource value: 0x7f090020
+			public const int share_success = 2131296288;
 			
-			// aapt resource value: 0x7f060021
-			public const int success_tweet = 2131099681;
+			// aapt resource value: 0x7f090021
+			public const int success_tweet = 2131296289;
 			
-			// aapt resource value: 0x7f060019
-			public const int thats_it = 2131099673;
+			// aapt resource value: 0x7f090019
+			public const int thats_it = 2131296281;
 			
-			// aapt resource value: 0x7f060011
-			public const int you_found_beacons = 2131099665;
+			// aapt resource value: 0x7f090011
+			public const int you_found_beacons = 2131296273;
 			
-			// aapt resource value: 0x7f060012
-			public const int you_found_beacons_code = 2131099666;
+			// aapt resource value: 0x7f090012
+			public const int you_found_beacons_code = 2131296274;
 			
 			static String()
 			{
@@ -1078,59 +1105,59 @@ namespace EvolveQuest.Droid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f0b0009
-			public const int ActionBar_Solid_Quest = 2131427337;
+			// aapt resource value: 0x7f080009
+			public const int ActionBar_Solid_Quest = 2131230729;
 			
-			// aapt resource value: 0x7f0b000a
-			public const int ActionBar_Transparent_Quest = 2131427338;
+			// aapt resource value: 0x7f08000a
+			public const int ActionBar_Transparent_Quest = 2131230730;
 			
-			// aapt resource value: 0x7f0b000d
-			public const int ActionBarTabStyle_Quest = 2131427341;
+			// aapt resource value: 0x7f08000d
+			public const int ActionBarTabStyle_Quest = 2131230733;
 			
-			// aapt resource value: 0x7f0b0010
-			public const int ActionButton_CloseMode_Quest = 2131427344;
+			// aapt resource value: 0x7f080010
+			public const int ActionButton_CloseMode_Quest = 2131230736;
 			
-			// aapt resource value: 0x7f0b0004
-			public const int CardView = 2131427332;
+			// aapt resource value: 0x7f080000
+			public const int CardView = 2131230720;
 			
-			// aapt resource value: 0x7f0b0005
-			public const int CardView_Dark = 2131427333;
+			// aapt resource value: 0x7f080001
+			public const int CardView_Dark = 2131230721;
 			
-			// aapt resource value: 0x7f0b0006
-			public const int CardView_Light = 2131427334;
+			// aapt resource value: 0x7f080002
+			public const int CardView_Light = 2131230722;
 			
-			// aapt resource value: 0x7f0b0002
-			public const int CircularProgressBar = 2131427330;
+			// aapt resource value: 0x7f080005
+			public const int CircularProgressBar = 2131230725;
 			
-			// aapt resource value: 0x7f0b0003
-			public const int CircularProgressBarLight = 2131427331;
+			// aapt resource value: 0x7f080006
+			public const int CircularProgressBarLight = 2131230726;
 			
-			// aapt resource value: 0x7f0b000c
-			public const int DropDownListView_Quest = 2131427340;
+			// aapt resource value: 0x7f08000c
+			public const int DropDownListView_Quest = 2131230732;
 			
-			// aapt resource value: 0x7f0b000e
-			public const int DropDownNav_Quest = 2131427342;
+			// aapt resource value: 0x7f08000e
+			public const int DropDownNav_Quest = 2131230734;
 			
-			// aapt resource value: 0x7f0b000b
-			public const int PopupMenu_Quest = 2131427339;
+			// aapt resource value: 0x7f08000b
+			public const int PopupMenu_Quest = 2131230731;
 			
-			// aapt resource value: 0x7f0b000f
-			public const int ProgressBar_Quest = 2131427343;
+			// aapt resource value: 0x7f08000f
+			public const int ProgressBar_Quest = 2131230735;
 			
-			// aapt resource value: 0x7f0b0007
-			public const int ProgressBarQuest = 2131427335;
+			// aapt resource value: 0x7f080007
+			public const int ProgressBarQuest = 2131230727;
 			
-			// aapt resource value: 0x7f0b0000
-			public const int ProgressButton = 2131427328;
+			// aapt resource value: 0x7f080003
+			public const int ProgressButton = 2131230723;
 			
-			// aapt resource value: 0x7f0b0001
-			public const int ProgressButton_Pin = 2131427329;
+			// aapt resource value: 0x7f080004
+			public const int ProgressButton_Pin = 2131230724;
 			
-			// aapt resource value: 0x7f0b0008
-			public const int Theme_Quest = 2131427336;
+			// aapt resource value: 0x7f080008
+			public const int Theme_Quest = 2131230728;
 			
-			// aapt resource value: 0x7f0b0011
-			public const int Theme_Quest_Widget = 2131427345;
+			// aapt resource value: 0x7f080011
+			public const int Theme_Quest_Widget = 2131230737;
 			
 			static Style()
 			{
@@ -1163,8 +1190,17 @@ namespace EvolveQuest.Droid
 			
 			public static int[] CardView = new int[]
 			{
-					2130771989,
-					2130771990};
+					2130771968,
+					2130771969,
+					2130771970,
+					2130771971,
+					2130771972,
+					2130771973,
+					2130771974,
+					2130771975,
+					2130771976,
+					2130771977,
+					2130771978};
 			
 			// aapt resource value: 0
 			public const int CardView_cardBackgroundColor = 0;
@@ -1172,16 +1208,43 @@ namespace EvolveQuest.Droid
 			// aapt resource value: 1
 			public const int CardView_cardCornerRadius = 1;
 			
+			// aapt resource value: 2
+			public const int CardView_cardElevation = 2;
+			
+			// aapt resource value: 3
+			public const int CardView_cardMaxElevation = 3;
+			
+			// aapt resource value: 5
+			public const int CardView_cardPreventCornerOverlap = 5;
+			
+			// aapt resource value: 4
+			public const int CardView_cardUseCompatPadding = 4;
+			
+			// aapt resource value: 6
+			public const int CardView_contentPadding = 6;
+			
+			// aapt resource value: 10
+			public const int CardView_contentPaddingBottom = 10;
+			
+			// aapt resource value: 7
+			public const int CardView_contentPaddingLeft = 7;
+			
+			// aapt resource value: 8
+			public const int CardView_contentPaddingRight = 8;
+			
+			// aapt resource value: 9
+			public const int CardView_contentPaddingTop = 9;
+			
 			public static int[] HoloCircularProgressBar = new int[]
 			{
-					2130771980,
-					2130771981,
-					2130771982,
-					2130771983,
-					2130771984,
-					2130771985,
-					2130771986,
-					2130771987};
+					2130771991,
+					2130771992,
+					2130771993,
+					2130771994,
+					2130771995,
+					2130771996,
+					2130771997,
+					2130771998};
 			
 			// aapt resource value: 0
 			public const int HoloCircularProgressBar_circular_gravity = 0;
@@ -1212,17 +1275,17 @@ namespace EvolveQuest.Droid
 					16842970,
 					16842981,
 					16843534,
-					2130771969,
-					2130771970,
-					2130771971,
-					2130771972,
-					2130771973,
-					2130771974,
-					2130771975,
-					2130771976,
-					2130771977,
-					2130771978,
-					2130771979};
+					2130771980,
+					2130771981,
+					2130771982,
+					2130771983,
+					2130771984,
+					2130771985,
+					2130771986,
+					2130771987,
+					2130771988,
+					2130771989,
+					2130771990};
 			
 			// aapt resource value: 1
 			public const int ProgressButton_android_clickable = 1;
@@ -1268,14 +1331,14 @@ namespace EvolveQuest.Droid
 			
 			public static int[] RobotoTextView = new int[]
 			{
-					2130771991};
+					2130772000};
 			
 			// aapt resource value: 0
 			public const int RobotoTextView_typeface = 0;
 			
 			public static int[] Theme = new int[]
 			{
-					2130771988};
+					2130771999};
 			
 			// aapt resource value: 0
 			public const int Theme_circularProgressBarStyle = 0;

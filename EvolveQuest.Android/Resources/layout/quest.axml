@@ -34,7 +34,7 @@
             android:layout_marginBottom="-8dp"
             android:layout_marginTop="-8dp" />
     </FrameLayout>
-    <EvolveQuest.Droid.controls.RobotoTextView
+    <EvolveQuest.Droid.Controls.RobotoTextView
         android:layout_margin="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
             android:scaleType="fitCenter"
             android:layout_gravity="center_vertical" />
     </LinearLayout>
-    <EvolveQuest.Droid.controls.RobotoTextView
+    <EvolveQuest.Droid.Controls.RobotoTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -90,7 +90,7 @@
         android:background="@color/xam_light_gray"
         android:layout_width="fill_parent"
         android:layout_height="1px" />
-    <EvolveQuest.Droid.controls.RobotoTextView
+    <EvolveQuest.Droid.Controls.RobotoTextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"

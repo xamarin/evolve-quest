@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal|top">
-        <EvolveQuest.Droid.controls.RobotoTextView
+        <EvolveQuest.Droid.Controls.RobotoTextView
             android:layout_margin="2dp"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
@@ -19,7 +19,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/quest"
             android:textColor="@color/xam_blue" />
-        <EvolveQuest.Droid.controls.RobotoTextView
+        <EvolveQuest.Droid.Controls.RobotoTextView
             android:layout_margin="2dp"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
@@ -29,7 +29,7 @@
             android:id="@+id/text_quest_number"
             android:text="0 of 12"
             android:textColor="@color/xam_blue" />
-        <EvolveQuest.Droid.controls.RobotoTextView
+        <EvolveQuest.Droid.Controls.RobotoTextView
             android:layout_margin="2dp"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
@@ -47,7 +47,7 @@
         android:id="@+id/main_image"
         android:padding="16dp"
         android:scaleType="fitCenter" />
-    <EvolveQuest.Droid.controls.RobotoTextView
+    <EvolveQuest.Droid.Controls.RobotoTextView
         android:layout_marginBottom="2dp"
         android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
@@ -57,7 +57,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/fantastic"
         android:textColor="@color/xam_blue" />
-    <EvolveQuest.Droid.controls.RobotoTextView
+    <EvolveQuest.Droid.Controls.RobotoTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         local:typeface="roboto_light"
@@ -65,7 +65,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/you_found_beacons"
         android:textColor="@color/xam_blue" />
-    <EvolveQuest.Droid.controls.RobotoTextView
+    <EvolveQuest.Droid.Controls.RobotoTextView
         android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
