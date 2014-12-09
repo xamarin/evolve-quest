@@ -1,17 +1,21 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EvolveQuest.iOS/AboutViewController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.James's iPhone" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tester/AppDelegate.cs">
     <Files>
-      <File FileName="EvolveQuest.Analysis/Program.cs" Line="8" Column="8" />
-      <File FileName="EvolveQuest.iOS/AboutViewController.cs" Line="13" Column="13" />
+      <File FileName="EvolveQuest.Analysis/Program.cs" Line="1" Column="1" />
+      <File FileName="EvolveQuest.iOS/AboutViewController.cs" Line="10" Column="10" />
+      <File FileName="Tester/Helpers/Messages.cs" Line="9" Column="9" />
+      <File FileName="Tester/Main.cs" Line="7" Column="7" />
+      <File FileName="Tester/AppDelegate.cs" Line="73" Column="73" />
+      <File FileName="Tester/Tester.csproj" Line="1" Column="1" />
+      <File FileName="Tester/MasterViewController.cs" Line="24" Column="24" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="Targets" expanded="True">
-            <Node name="EvolveQuest.iOS" expanded="True">
-              <Node name="AboutViewController.cs" selected="True" />
-            </Node>
+          <Node name="Tester" expanded="True" selected="True">
+            <Node name="ComponentReferenceFolder" expanded="True" />
+            <Node name="Helpers" expanded="True" />
           </Node>
         </State>
       </Pad>

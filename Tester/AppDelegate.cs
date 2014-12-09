@@ -23,12 +23,14 @@ namespace Tester
 
     public override void FinishedLaunching(UIApplication application)
     {
+        #if !__UNIFIED__
 			Xamarin.Insights.Initialize("6978a61611a7e9f6fd20172582cb56911ee3131c");
 			#if DEBUG
 			Xamarin.Insights.DisableCollection = true;
 			Xamarin.Insights.DisableDataTransmission = true;
 			Xamarin.Insights.DisableExceptionCatching = true;
 			#endif
+        #endif
 
       ServiceContainer.Register<IMessageDialog>(new Messages());
 			

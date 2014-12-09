@@ -55,7 +55,7 @@ namespace Tester.Helpers
         if (args.ButtonIndex == 0)
           return;
 
-        completed(args.ButtonIndex - 1);//subtract 1 becuase of cancel button
+        completed((int)args.ButtonIndex - 1);//subtract 1 becuase of cancel button
 
       };
       alert.Show();
