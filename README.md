@@ -1,7 +1,7 @@
 ![](Screenshots/icon.png)Evolve Quest
 ============
 
-Evolve Quest is build with [Xamarin](http://www.xamarin.com) and is an iBeacon based scavenger hunt that attendees enjoyed at Evolve 2014
+Evolve Quest is built with [Xamarin](http://www.xamarin.com) and is an iBeacon based scavenger hunt that attendees enjoyed at [Evolve 2014](http://www.xamarin.com/evolve)
 
 ![](Screenshots/alldevices.png)
 
