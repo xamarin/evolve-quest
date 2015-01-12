@@ -6,7 +6,7 @@
     <SharedGUID>8aaa4114-f076-4fab-89d0-e3500e28ccc0</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>EvolveScavengerHunt.Shared</Import_RootNamespace>
+    <Import_RootNamespace>EvolveQuest.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\Images.cs" />

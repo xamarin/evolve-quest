@@ -1,6 +1,6 @@
 ﻿using System;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using Foundation;
+using UIKit;
 using EvolveQuest.Shared.Helpers;
 using EvolveQuest.Shared.Interfaces;
 using EvolveQuest.iOS.Helpers;
@@ -36,11 +36,13 @@ namespace EvolveQuest.iOS
             #endif
 
             ServiceContainer.Register<IMessageDialog>(new Messages());
+            #if !__UNIFIED__
             Xamarin.Insights.Initialize("6978a61611a7e9f6fd20172582cb56911ee3131c");
             #if DEBUG
             Xamarin.Insights.DisableCollection = true;
             Xamarin.Insights.DisableDataTransmission = true;
             Xamarin.Insights.DisableExceptionCatching = true;
+            #endif
             #endif
             FileCache.SaveLocation = System.IO.Directory.GetParent(Environment.GetFolderPath(Environment.SpecialFolder.Personal)).ToString() + "/tmp";
         }

@@ -1,7 +1,7 @@
 using System;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
-using MonoTouch.CoreLocation;
+using Foundation;
+using UIKit;
+using CoreLocation;
 using EvolveQuest.Shared.ViewModels;
 using EvolveQuest.Shared.Extensions;
 using System.Collections.Generic;
@@ -43,7 +43,7 @@ namespace EvolveQuest.iOS
 
             ButtonContinueQuest.Hidden = true;
 
-            ProgressBar = new UIActivityIndicatorView(new System.Drawing.RectangleF(0, 0, 20, 20))
+            ProgressBar = new UIActivityIndicatorView(new CoreGraphics.CGRect(0, 0, 20, 20))
             {
                 HidesWhenStopped = true,
                 ActivityIndicatorViewStyle = UIActivityIndicatorViewStyle.White
@@ -83,11 +83,11 @@ namespace EvolveQuest.iOS
             viewModel.PropertyChanged += HandlePropertyChanged;
 
             manager = new CLLocationManager();
-            if (Utils.IsiOS8)
+            if (EvolveQuest.iOS.Helpers.Utils.IsiOS8)
                 manager.RequestWhenInUseAuthorization();
 
             managerSecret = new CLLocationManager();
-            if (Utils.IsiOS8)
+            if (EvolveQuest.iOS.Helpers.Utils.IsiOS8)
                 managerSecret.RequestWhenInUseAuthorization();
 				
 

@@ -1,6 +1,6 @@
 using System;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using Foundation;
+using UIKit;
 using EvolveQuest.Shared.ViewModels;
 using EvolveQuest.Shared.Helpers;
 using System.Drawing;
@@ -99,7 +99,7 @@ namespace EvolveQuest.iOS
             UIView.BeginAnimations(string.Empty, System.IntPtr.Zero);
             UIView.SetAnimationDuration(0.3);
  
-            RectangleF frame = View.Frame;
+            var frame = View.Frame;
  
             if (move)
             {
@@ -129,10 +129,10 @@ namespace EvolveQuest.iOS
             }
 
             // Bottom of the controller = initial position + height + offset      
-            bottom = (activeview.Frame.Y + activeview.Frame.Height + Offset);
+            bottom = ((float)activeview.Frame.Y + (float)activeview.Frame.Height + Offset);
 
             // Calculate how far we need to scroll
-            scrollamount = (r.Height - (View.Frame.Size.Height - bottom));
+            scrollamount = ((float)r.Height - ((float)View.Frame.Size.Height - bottom));
 
             // Perform the scrolling
             if (scrollamount > 0)

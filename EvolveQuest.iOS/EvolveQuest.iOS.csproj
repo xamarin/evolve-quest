@@ -3,12 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
-    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProjectGuid>{1813F3B1-709A-490F-B09D-03DA2CBFDFC3}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>EvolveQuest.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>EvolveScavengerHuntiOS</AssemblyName>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
   </PropertyGroup>
@@ -30,6 +29,7 @@
     <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
     <MtouchI18n>
     </MtouchI18n>
+    <AssemblyName>EvolveScavengerHuntiOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -41,13 +41,14 @@
     <MtouchLink>None</MtouchLink>
     <ConsolePause>false</ConsolePause>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <AssemblyName>EvolveScavengerHuntiOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\iPhone\Debug</OutputPath>
-    <DefineConstants>DEBUG;__MOBILE__;__IOS__;</DefineConstants>
+    <DefineConstants>DEBUG;__MOBILE__;__IOS__;__UNIFIED__;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
@@ -60,6 +61,7 @@
     </MtouchI18n>
     <IpaPackageName>
     </IpaPackageName>
+    <AssemblyName>EvolveQuestiOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>full</DebugType>
@@ -74,6 +76,7 @@
     <MtouchI18n>
     </MtouchI18n>
     <MtouchArch>ARMv7</MtouchArch>
+    <AssemblyName>EvolveQuestiOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
     <Optimize>true</Optimize>
@@ -92,6 +95,7 @@
     <MtouchArch>ARMv7</MtouchArch>
     <MtouchUseLlvm>true</MtouchUseLlvm>
     <CodesignProvision>2d8274af-aeef-4b8c-9e2c-bc9c13d55423</CodesignProvision>
+    <AssemblyName>EvolveQuestiOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
     <Optimize>true</Optimize>
@@ -107,44 +111,39 @@
     </MtouchI18n>
     <MtouchArch>ARMv7</MtouchArch>
     <MtouchUseLlvm>true</MtouchUseLlvm>
+    <AssemblyName>EvolveQuestiOS</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MonoTouch.Dialog-1" />
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
-    <Reference Include="monotouch" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="GCDiscreetNotification">
-      <HintPath>..\Components\gcdiscreetnotification-1.0.2\lib\ios\GCDiscreetNotification.dll</HintPath>
-    </Reference>
+    <Reference Include="Xamarin.iOS" />
     <Reference Include="Calabash">
-      <HintPath>..\Components\calabash-1.169\lib\ios\Calabash.dll</HintPath>
+      <HintPath>..\Components\calabash-11.4\lib\ios-unified\Calabash.dll</HintPath>
     </Reference>
-    <Reference Include="zxing.monotouch">
-      <HintPath>..\packages\ZXing.Net.Mobile.1.4.7\lib\MonoTouch\zxing.monotouch.dll</HintPath>
-    </Reference>
-    <Reference Include="ZXing.Net.Mobile">
-      <HintPath>..\packages\ZXing.Net.Mobile.1.4.7\lib\MonoTouch\ZXing.Net.Mobile.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Insights">
-      <HintPath>..\packages\Xamarin.Insights.1.7.3.98\lib\MonoTouch10\Xamarin.Insights.dll</HintPath>
-    </Reference>
-    <Reference Include="PLCrashReporter">
-      <HintPath>..\packages\Xamarin.Insights.1.7.3.98\lib\MonoTouch10\PLCrashReporter.dll</HintPath>
+    <Reference Include="GCDiscreetNotification">
+      <HintPath>..\Components\gcdiscreetnotification-1.0.2.1\lib\ios-unified\GCDiscreetNotification.dll</HintPath>
     </Reference>
     <Reference Include="Refractored.Xam.Settings">
-      <HintPath>..\packages\Xam.Plugins.Settings.1.4.0.1\lib\MonoTouch10\Refractored.Xam.Settings.dll</HintPath>
+      <HintPath>..\packages\Xam.Plugins.Settings.1.4.0.1\lib\Xamarin.iOS10\Refractored.Xam.Settings.dll</HintPath>
     </Reference>
     <Reference Include="Refractored.Xam.Settings.Abstractions">
-      <HintPath>..\packages\Xam.Plugins.Settings.1.4.0.1\lib\MonoTouch10\Refractored.Xam.Settings.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.6\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Xam.Plugins.Settings.1.4.0.1\lib\Xamarin.iOS10\Refractored.Xam.Settings.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="ModernHttpClient">
-      <HintPath>..\packages\modernhttpclient.2.1.4\lib\MonoTouch\ModernHttpClient.dll</HintPath>
+      <HintPath>..\packages\modernhttpclient.2.1.5\lib\Xamarin.iOS10\ModernHttpClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.ios">
+      <HintPath>..\packages\ZXing.Net.Mobile.1.4.7.1\lib\Xamarin.iOS\zxing.ios.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXing.Net.Mobile">
+      <HintPath>..\packages\ZXing.Net.Mobile.1.4.7.1\lib\Xamarin.iOS\ZXing.Net.Mobile.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -169,9 +168,9 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
-    <None Include="packages.config" />
     <None Include="RELEASE-NOTES.txt" />
     <None Include="Properties\_SettingsStarted.txt" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helpers\Messages.cs" />
@@ -218,18 +217,8 @@
     <BundleResource Include="Resources\ic_no_banana%402x.png" />
     <BundleResource Include="Resources\quest_map%402x.png" />
   </ItemGroup>
-  <ItemGroup>
-    <XamarinComponentReference Include="gcdiscreetnotification">
-      <Version>1.0.2</Version>
-      <Visible>False</Visible>
-    </XamarinComponentReference>
-    <XamarinComponentReference Include="calabash">
-      <Version>1.169</Version>
-      <Visible>False</Visible>
-    </XamarinComponentReference>
-  </ItemGroup>
   <Import Project="..\EvolveQuest.Shared\EvolveQuest.Shared.projitems" Label="Shared" Condition="Exists('..\EvolveQuest.Shared\EvolveQuest.Shared.projitems')" />
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
@@ -238,4 +227,14 @@
     <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
   </Target>
   <ItemGroup />
+  <ItemGroup>
+    <XamarinComponentReference Include="calabash">
+      <Version>11.4</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="gcdiscreetnotification">
+      <Version>1.0.2.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
 </Project>

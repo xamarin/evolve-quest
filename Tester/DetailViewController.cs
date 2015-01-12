@@ -1,10 +1,10 @@
 ﻿using System;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using Foundation;
+using UIKit;
 using EvolveQuest.Shared.Extensions;
-using MonoTouch.CoreLocation;
-using MonoTouch.CoreBluetooth;
-using MonoTouch.CoreFoundation;
+using CoreLocation;
+using CoreBluetooth;
+using CoreFoundation;
 
 namespace Tester
 {

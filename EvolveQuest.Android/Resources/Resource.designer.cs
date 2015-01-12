@@ -131,11 +131,11 @@ namespace EvolveQuest.Droid
 			global::com.refractored.monodroidtoolkit.Resource.Styleable.ProgressButton_unpinnedDrawable = global::EvolveQuest.Droid.Resource.Styleable.ProgressButton_unpinnedDrawable;
 			global::com.refractored.monodroidtoolkit.Resource.Styleable.Theme = global::EvolveQuest.Droid.Resource.Styleable.Theme;
 			global::com.refractored.monodroidtoolkit.Resource.Styleable.Theme_circularProgressBarStyle = global::EvolveQuest.Droid.Resource.Styleable.Theme_circularProgressBarStyle;
+			global::Xamarin.InsightsCore.Resource.String.ApplicationName = global::EvolveQuest.Droid.Resource.String.ApplicationName;
+			global::Xamarin.InsightsCore.Resource.String.Hello = global::EvolveQuest.Droid.Resource.String.Hello;
 			global::ZXing.Mobile.Resource.Id.contentFrame = global::EvolveQuest.Droid.Resource.Id.contentFrame;
 			global::ZXing.Mobile.Resource.Layout.zxingscanneractivitylayout = global::EvolveQuest.Droid.Resource.Layout.zxingscanneractivitylayout;
 			global::ZXing.Mobile.Resource.Layout.zxingscannerfragmentlayout = global::EvolveQuest.Droid.Resource.Layout.zxingscannerfragmentlayout;
-			global::Xamarin.InsightsCore.Resource.String.ApplicationName = global::EvolveQuest.Droid.Resource.String.ApplicationName;
-			global::Xamarin.InsightsCore.Resource.String.Hello = global::EvolveQuest.Droid.Resource.String.Hello;
 		}
 		
 		public partial class Animation

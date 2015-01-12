@@ -1,6 +1,6 @@
-﻿using MonoTouch.UIKit;
+﻿using UIKit;
 
-namespace EvolveScavengerHuntiOS
+namespace EvolveQuest.iOS
 {
 	public class Application
 	{

@@ -261,7 +261,6 @@ Global
 		{13A16FB7-96C3-4063-B147-F3A7E65D0861} = {15FADD3C-E451-40FB-96DF-DF8BB81F0C83}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = EvolveQuest.iOS\EvolveQuest.iOS.csproj
 		Policies = $0
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = PrefixedHierarchical

@@ -10,8 +10,8 @@ using Android.Widget;
 using EvolveQuest.Shared.Helpers;
 
 #elif __IOS__
-using MonoTouch.UIKit;
-using MonoTouch.CoreGraphics;
+using UIKit;
+using CoreGraphics;
 using System.Drawing;
 using EvolveQuest.Shared.Helpers;
 
@@ -56,7 +56,7 @@ namespace EvolveQuest.Shared.Extensions
 				return;
 			var progress = new UIActivityIndicatorView (UIActivityIndicatorViewStyle.WhiteLarge)
 			{
-				Center = new PointF(imageView.Bounds.GetMidX(), imageView.Bounds.GetMidY()),
+				Center = new CGPoint(imageView.Bounds.GetMidX(), imageView.Bounds.GetMidY()),
 			};
 			imageView.AddSubview (progress);
 

@@ -146,7 +146,7 @@ namespace EvolveQuest.Shared.ViewModels
                 QuestComplete = false;
                 if (game == null)
                 {
-                    await Task.Run(async () =>
+                    await Task.Run(() =>
                         {
                             game = JsonConvert.DeserializeObject<Game>(FileCache.ReadGameData());
                         });

@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 using EvolveQuest.Shared.Interfaces;
-using MonoTouch.UIKit;
+using UIKit;
 
 namespace Tester.Helpers
 {
@@ -55,7 +55,7 @@ namespace Tester.Helpers
         if (args.ButtonIndex == 0)
           return;
 
-        completed(args.ButtonIndex - 1);//subtract 1 becuase of cancel button
+        completed((int)args.ButtonIndex - 1);//subtract 1 becuase of cancel button
 
       };
       alert.Show();

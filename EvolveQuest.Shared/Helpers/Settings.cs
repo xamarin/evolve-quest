@@ -1,6 +1,4 @@
-﻿using Refractored.Xam.Settings;
-
-// Helpers/Settings.cs
+﻿// Helpers/Settings.cs
 using Refractored.Xam.Settings;
 using Refractored.Xam.Settings.Abstractions;
 using System;
@@ -26,27 +24,27 @@ namespace EvolveQuest.Shared.Helpers
         #region Setting Constants
 
 
-        private const string QuestDoneKey = "quest_done";
-        private static readonly bool QuestDoneDefault = false;
+        const string QuestDoneKey = "quest_done";
+        static readonly bool QuestDoneDefault = false;
 
-        private const string Quest1Key = "quest1";
-        private static readonly bool Quest1Default = false;
+        const string Quest1Key = "quest1";
+        static readonly bool Quest1Default = false;
 
 
-        private const string Quest2Key = "quest2";
-        private static readonly bool Quest2Default = false;
+        const string Quest2Key = "quest2";
+        static readonly bool Quest2Default = false;
 
-        private const string Quest3Key = "quest3";
-        private static readonly bool Quest3Default = false;
+        const string Quest3Key = "quest3";
+        static readonly bool Quest3Default = false;
 
-        private const string SecretBeaconFoundKey = "secret_beacon";
-        private static readonly bool SecretBananaFoundDefault = false;
+        const string SecretBeaconFoundKey = "secret_beacon";
+        static readonly bool SecretBananaFoundDefault = false;
 
-        private const string CurrentQuestKey = "current_quest_number";
-        private static readonly int CurrenQuestDefault = 0;
+        const string CurrentQuestKey = "current_quest_number";
+        static readonly int CurrenQuestDefault = 0;
 
-        private const string GameCompleteKey = "game_complete";
-        private static readonly bool GameCompleteDefault = false;
+        const string GameCompleteKey = "game_complete";
+        static readonly bool GameCompleteDefault = false;
 
         #endregion
 
@@ -58,8 +56,7 @@ namespace EvolveQuest.Shared.Helpers
             }
             set
             {
-                if (AppSettings.AddOrUpdateValue(CurrentQuestKey, value))
-                    AppSettings.Save();
+                AppSettings.AddOrUpdateValue(CurrentQuestKey, value);
             }
         }
 
@@ -71,16 +68,17 @@ namespace EvolveQuest.Shared.Helpers
             }
             set
             {
-                if (AppSettings.AddOrUpdateValue(QuestDoneKey, value))
-                    AppSettings.Save();
+                AppSettings.AddOrUpdateValue(QuestDoneKey, value);
 
                 if (value)
                 {
+                    #if !__UNIFIED__
                     Xamarin.Insights.Track("QuestCompleted", new Dictionary<string, string>
                         {
                             { "Quest", CurrentQuest.ToString() },
                             { "Date", DateTime.Now.ToLongDateString() + " " + DateTime.Now.ToLongTimeString() }
                         });
+                    #endif
                 }
             }
         }
@@ -96,14 +94,15 @@ namespace EvolveQuest.Shared.Helpers
 
                 if (!GameCompleted && value)
                 {
+                    #if !__UNIFIED__
                     Xamarin.Insights.Track("GameComplete", new Dictionary<string, string>
                         {
                             { "Date", DateTime.Now.ToLongDateString() + " " + DateTime.Now.ToLongTimeString() }
                         });
+                    #endif
                 }
 
-                if (AppSettings.AddOrUpdateValue(GameCompleteKey, value))
-                    AppSettings.Save();
+                AppSettings.AddOrUpdateValue(GameCompleteKey, value);
 
             }
         }
@@ -116,8 +115,7 @@ namespace EvolveQuest.Shared.Helpers
             }
             set
             {
-                if (AppSettings.AddOrUpdateValue(SecretBeaconFoundKey, value))
-                    AppSettings.Save();
+                AppSettings.AddOrUpdateValue(SecretBeaconFoundKey, value);
             }
         }
 
@@ -130,8 +128,7 @@ namespace EvolveQuest.Shared.Helpers
             }
             set
             {
-                if (AppSettings.AddOrUpdateValue(Quest1Key, value))
-                    AppSettings.Save();
+                AppSettings.AddOrUpdateValue(Quest1Key, value);
             }
         }
 
@@ -143,8 +140,7 @@ namespace EvolveQuest.Shared.Helpers
             }
             set
             {
-                if (AppSettings.AddOrUpdateValue(Quest2Key, value))
-                    AppSettings.Save();
+                AppSettings.AddOrUpdateValue(Quest2Key, value);
             }
         }
 
@@ -156,8 +152,7 @@ namespace EvolveQuest.Shared.Helpers
             }
             set
             {
-                if (AppSettings.AddOrUpdateValue(Quest3Key, value))
-                    AppSettings.Save();
+                AppSettings.AddOrUpdateValue(Quest3Key, value);
             }
         }
 
