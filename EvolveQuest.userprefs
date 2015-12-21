@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="EvolveQuest.iOS/EvolveQuest.iOS.csproj">
+﻿<Properties StartupItem="EvolveQuest.Android/EvolveQuest.Android.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.4" />
   <MonoDevelop.Ide.Workbench ActiveDocument="EvolveQuest.iOS/AppDelegate.cs">
     <Files>
@@ -8,12 +8,8 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="EvolveQuest" expanded="True">
-            <Node name="Targets" expanded="True">
-              <Node name="EvolveQuest.iOS" expanded="True">
-                <Node name="AppDelegate.cs" selected="True" />
-              </Node>
-            </Node>
+          <Node name="EvolveQuest" expanded="True" selected="True">
+            <Node name="Targets" expanded="True" />
           </Node>
         </State>
       </Pad>

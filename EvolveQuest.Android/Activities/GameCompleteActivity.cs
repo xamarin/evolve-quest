@@ -36,7 +36,7 @@ namespace EvolveQuest.Droid.Activities
             mainImage = FindViewById<ImageView>(Resource.Id.main_image);
             progressBar = FindViewById<ProgressBar>(Resource.Id.progressBar);
             beaconManager = new BeaconManager(this);
-            scanner = new ZXing.Mobile.MobileBarcodeScanner(this);
+            scanner = new ZXing.Mobile.MobileBarcodeScanner();
 
             var shareButton = FindViewById<Button>(Resource.Id.share_success);
             shareButton.Click += (sender, e) =>

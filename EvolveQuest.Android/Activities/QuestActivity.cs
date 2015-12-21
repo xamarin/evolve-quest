@@ -63,7 +63,7 @@ namespace EvolveQuest.Droid.Activities
             buttonContinue.Click += ButtonContinueClick;
             buttonContinue.Visibility = ViewStates.Gone;
             beaconManager = new BeaconManager(this);
-            scanner = new ZXing.Mobile.MobileBarcodeScanner(this);
+            scanner = new ZXing.Mobile.MobileBarcodeScanner();
 
             beaconManager.Ranging += BeaconManagerRanging;
     
