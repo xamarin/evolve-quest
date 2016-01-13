@@ -220,13 +220,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\ZXing.Net.Mobile.1.4.6\lib\wp8\WriteableBitmapExWinPhone.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Insights, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Xamarin.Insights, Version=1.11.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Xamarin.Insights.1.5.249\lib\WP80\Xamarin.Insights.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.InsightsCore, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Xamarin.Insights.1.5.249\lib\WP80\Xamarin.InsightsCore.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Insights.1.11.3\lib\WP80\Xamarin.Insights.dll</HintPath>
     </Reference>
     <Reference Include="zxing.wp8.0, Version=0.14.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -241,6 +237,7 @@
   <Import Project="..\EvolveScavengerHunt.Shared\EvolveScavengerHunt.Shared.projitems" Label="Shared" Condition="Exists('..\EvolveScavengerHunt.Shared\EvolveScavengerHunt.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Insights.1.11.3\build\WP80\Xamarin.Insights.targets" Condition="Exists('..\packages\Xamarin.Insights.1.11.3\build\WP80\Xamarin.Insights.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
